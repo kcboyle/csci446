@@ -4,12 +4,36 @@
 <meta charset="utf-8" />
 <title>Life Figure-Outer Application</title>
 <style type="text/css">
+	body {
+		background: grey;
+		color: white;
+		font-family: Arial;
+		font-size: 1em;
+	}
 	nav ul {
 		list-style-type: none;
 	}
 
 	nav li {
 		display: inline-block;
+	}
+	
+	a {
+		color: black;
+		text-decoration: none;
+		padding: 0.3em;
+	}
+	
+	.half {
+		width: 50%;
+	}
+	
+	.fr {
+		float: right;
+	}
+	
+	.container {
+		overflow: auto;
 	}
 </style>
 </head>
@@ -19,20 +43,26 @@
 			<h1>The Magic Life Figure-Outer!</h1>
 			<h3>Figuring out your life for you, so you don't have to...</h3>
 		</hgroup>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Interests</a></li>
-			<li><a href="#">Health</a></li>
-			<li><a href="#">Academic</a></li>
-			<li><a href="#">Professional</a></li>
-			<li><a href="#">Fun</a></li>
-			<li><a href="#">Evil</a></li>
-		</ul>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Interests</a></li>
+				<li><a href="#">Health</a></li>
+				<li><a href="#">Academic</a></li>
+				<li><a href="#">Professional</a></li>
+				<li><a href="#">Fun</a></li>
+				<li><a href="#">Evil</a></li>
+			</ul>
 		</nav>
-	<footer>
-		<p>&copy 2011 Borg-like Monstrosity of Mind Control, Inc. All rights reserved</p>
-	</footer>
+	</header>
+
+<div class="container">
+<section class="half">
+<h2>Lorem Ipsum Dolor Sit Amet.</h2>
+</section>
+</div>	
+<footer>
+	<p>&copy 2011 Borg-like Monstrosity of Mind Control, Inc. All rights reserved</p>
+</footer>
 </body>
 </html>
