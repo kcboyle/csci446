@@ -6,9 +6,10 @@
 <style type="text/css">
 	body {
 		background: DarkGrey;
-		color: white;
+		color: black;
 		font-family: Arial;
 		font-size: 1em;
+	
 	}
 	hgroup {
 		background: LightGrey;
@@ -16,18 +17,34 @@
 		color: black;
 		padding: 0.5em;
 	}
+	
+	footer {
+		background: #EAEAEA;
+		color: Black;
+		border: 1px solid #EAEAEA;
+	}
+		
+	nav {
+		background: black;
+		color: white;
+		border: 1px solid black;
+	}
+	
 	nav ul {
 		list-style-type: none;
+		padding: .7em;
+		font-size: 1.2em;
 	}
 
 	nav li {
 		display: inline-block;
+		
 	}
 	
 	a {
-		color: black;
+		color: white;
 		text-decoration: none;
-		padding: 0.3em;
+		padding-right: 2em;
 	}
 	
 	a:hover {
@@ -40,13 +57,19 @@
 	
 	.fr {
 		float: right;
+		background: #ECF6FF;
+		padding: 0.7em;
+		border: 1px solid #ECF6FF;
 	}
 	
-	.container {
+	.option {
 		overflow: auto;
+		background: white;
 	}
+	
 </style>
 </head>
+
 <body>
 	<header>
 		<hgroup>
@@ -61,16 +84,27 @@
 				<li><a href="#" title="I used to have wonderful grades before coming to Mines">Academic</a></li>
 				<li><a href="#" title="I've got a lovely bunch of coconuts">Professional</a></li>
 				<li><a href="#" title="F is for friends who do stuff together">Fun</a></li>
-				<li><a href="#" title="F is for fire that burns down the whole town">Evil</a></li>
+				<li><a href="#" title="U is for Uranium...BOMBS">Evil</a></li>
 			</ul>
 		</nav>
 	</header>
 
-<div class="container">
-<section class="half">
-<h2>Lorem Ipsum Dolor Sit Amet.</h2>
-</section>
+<div class="option">
+	<section class="half fr">
+		<h3>Current Progress in Life</h3>
+		<p>Mediocre. You really should enjoy life more</p>
+	</section>
+	<section class="half">
+		<h2>Lorem Ipsum Dolor Sit Amet.</h2>
+		<select size="3">
+			<option>Comfortably numb</option>
+			<option>Grumpy as poop, you jerk</option>
+			<option>Happy like I'm on controlled substances</option>
+			<option>Normal. Absolutely Normal.</option>
+		</select>
+	</section>
 </div>	
+
 <footer>
 	<p>&copy 2011 Borg-like Monstrosity of Mind Control, Inc. All rights reserved</p>
 </footer>
