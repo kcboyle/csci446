@@ -26,28 +26,32 @@
 	</header>
 
 <div class="option">
-	<section class="half fr">
+	<div class="half fr">
 		<h3>Current Progress in Life</h3>
 		<p>Mediocre. You really should enjoy life more</p>
-	</section>
-	<section class="half">
-		<h2>Lorem Ipsum Dolor Sit Amet.</h2>
-		<p>How do you feel today?
-		<input type="text" />
-		</p>
-		<p>How would you like to feel?(Choose all that apply)</p>
-		<select size="3">
-			<option>Comfortably numb</option>
-			<option>Grumpy as poop, you jerk</option>
-			<option>Happy like I'm on controlled substances</option>
-			<option>Normal. Absolutely Normal.</option>
-		</select>
-		</p>
-	</section>
+	</div>
+	<form action="#" onsubmit="if(document.getElementById('feeling').value == '') alert('Surely you feel something!'); return false;">
+		<div class="half">
+			<div class="column1">
+				<h2>Lorem Ipsum Dolor Sit Amet.</h2>
+				<p>How do you feel today?</p>
+				<p>How would you like to feel?<br />(choose all that apply)</p>
+			</div>
+			<div class="column2">
+				<input type="text" id="feeling" />
+				<select size="3">
+					<option>Comfortably numb</option>
+					<option>Grumpy as poop, you jerk</option>
+					<option>Happy like I'm on controlled substances</option>
+					<option>Normal. Absolutely Normal.</option>
+				<p> <input type="submit" value="Feel me!" /></p>
+			</div>
+		</div>
+	</form>
 </div>	
 
 <footer>
-	<p>&copy 2011 Borg-like Monstrosity of Mind Control, Inc. All rights reserved</p>
+	<p>&copy 2011 Borg-like Monstrosity of Mind Control, Inc. All rights reserved.</p>
 </footer>
 </body>
 </html>
