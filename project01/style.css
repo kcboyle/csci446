@@ -1,5 +1,6 @@
 <meta http-equiv="Content-Style-Type" content="text/css" />
 	body {
+	
 	}
 	
 	hgroup {
@@ -21,8 +22,15 @@
 	h2 {
 		font-size:2em;
 		letter-spacing: -1px;
-		line-height: 0.2em;
-		padding-left: 0.5em;
+		line-height: 0em;
+		padding: 0em;
+		margin-top: .5em;
+	}
+	
+	h3 {
+		font-size: 1.3em;
+		letter-spacing: -1px;
+		line-height: 0.7em;
 	}
 	
 	footer {
@@ -31,6 +39,9 @@
 		border: 1px solid #EAEAEA;
 		font-weight: normal;
 		text-align: center;
+		line-height: 0.5em;
+		letter-spacing: -1px;
+		word-spacing: 2px;
 	}
 		
 	nav {
@@ -42,6 +53,7 @@
 	nav ul {
 		list-style-type: none;
 		padding: .7em;
+		padding-left: 0.5 em;
 		margin: 0.5em;
 		font-size: 1.2em;
 		line-height: 0em;
@@ -71,11 +83,18 @@
 		background: #ECF6FF;
 		padding: 0.7em;
 		border: 1px solid #ECF6FF;
+		font-size: 1.1em;
+		font-weight: normal;
+		width: 20em;
+		height: 5em;
+		margin: 0em;
+		position: relative;
 	}
 	
 	.option {
-		overflow: auto;
+		overflow: hidden;
 		background: white;
+		padding: 0.7em;
 	}
 	
 	.center {
@@ -88,4 +107,19 @@
 		margin-right:auto;
 		width:93%;
 		border: 2px solid black;
+	}
+	
+	.column1{
+		float: left;
+		width: 40%;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.column2{
+		float: left;
+		width: 50%;
+		position: relative;
+		#left: 50%;
+		overflow: hidden;
 	}
