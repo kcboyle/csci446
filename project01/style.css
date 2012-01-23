@@ -1,0 +1,94 @@
+<meta http-equiv="Content-Style-Type" content="text/css" />
+#<style type="text/css">
+	body {
+	}
+	
+	hgroup {
+		background: LightGrey;
+		color: grey;
+		font-size: 1em;
+		line-height: 0.3em;
+		letter-spacing: -1px;
+		padding: 0.5em;
+		
+	}
+	
+	h1 {
+		font-size:2.5em;
+		color: black;
+		letter-spacing: -3px;
+	}
+	
+	h2 {
+		font-size:2em;
+		letter-spacing: -1px;
+		line-height: 0.2em;
+		padding-left: 0.5em;
+	}
+	
+	footer {
+		background: #EAEAEA;
+		color: Black;
+		border: 1px solid #EAEAEA;
+		font-weight: normal;
+		text-align: center;
+	}
+		
+	nav {
+		background: black;
+		color: white;
+		border: 1px solid black;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		padding: .7em;
+		margin: 0.5em;
+		font-size: 1.2em;
+		line-height: 0em;
+	}
+
+	nav li {
+		display: inline;
+		
+	}
+	
+	a {
+		color: white;
+		text-decoration: none;
+		padding-right: 2em;
+	}
+	
+	a:hover {
+		color: blue;
+	}
+	
+	.half {
+		width: 50%;
+	}
+	
+	.fr {
+		float: right;
+		background: #ECF6FF;
+		padding: 0.7em;
+		border: 1px solid #ECF6FF;
+	}
+	
+	.option {
+		overflow: auto;
+		background: white;
+	}
+	
+	.center {
+		background:DarkGrey;
+		color: black;
+		font-size: 1em;
+		font-family: Arial;
+		font-weight: bolder;
+		margin-left:auto;
+		margin-right:auto;
+		width:93%;
+		border: 2px solid black;
+	}
+	
+#</style>
