@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<LINK href="style.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8" />
 <title>Life Figure-Outer Application</title>
 </head>
@@ -26,25 +26,39 @@
 	</header>
 
 <div class="option">
-	<div class="half fr">
+	<div class="fr">
 		<h3>Current Progress in Life</h3>
 		<p>Mediocre. You really should enjoy life more</p>
 	</div>
 	<form action="#" onsubmit="if(document.getElementById('feeling').value == '') alert('Surely you feel something!'); return false;">
-		<div class="half">
-			<h2>Lorem Ipsum Dolor Sit Amet.</h2>
-			<div class="column1">
+		<h2>Lorem Ipsum Dolor Sit Amet.</h2>
+		<div class="row">
+			<div class="column">
 				<p>How do you feel today?</p>
-				<p>How would you like to feel?<br />(choose all that apply)</p>
 			</div>
-			<div class="column2">
+			<div class="column">
 				<input type="text" id="feeling" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<p class="eliminate">How would you like to feel? (choose all that apply)</p>
+			</div>
+			<div class="column">
 				<select size="4" multiple="multiple">
 					<option>Comfortably numb</option>
 					<option>Grumpy as poop, you jerk</option>
 					<option>Happy like I'm on controlled substances</option>
 					<option>Normal. Absolutely Normal.</option>
-				<p><input type="submit" value="Feel me!" /></p>
+				</select>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+			</div>
+			<div class="column">
+				<input type="submit" value="Feel me!" />
 			</div>
 		</div>
 	</form>
