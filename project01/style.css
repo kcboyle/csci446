@@ -1,13 +1,6 @@
 body {
 }
 
-.eliminate{
-	margin-top:0;
-}
-
-.am {
-	padding-top: 1em;
-}
 
 div {
 	vertical-align: top;
@@ -19,18 +12,19 @@ hgroup {
 	font-size: 1em;
 	line-height: 0.3em;
 	letter-spacing: -1px;
-	padding: 0.5em;
-	
+	padding-left: 0.7em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
 }
 
 h1 {
-	font-size:2.5em;
+	font-size:2em;
 	color: black;
 	letter-spacing: -3px;
 }
 
 h2 {
-	font-size:2em;
+	font-size:1.5em;
 	letter-spacing: -1px;
 	line-height: 0;
 	padding: 0;
@@ -39,17 +33,19 @@ h2 {
 }
 
 h3 {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	letter-spacing: -1px;
 	line-height: 0.7em;
+	margin: 0;
 }
 
 footer {
 	background: #EAEAEA;
 	color: Black;
 	border: 1px solid #EAEAEA;
+	font-size: 0.9em;
 	text-align: center;
-	line-height: 0.5em;
+	line-height: 0.4em;
 	letter-spacing: -1px;
 	word-spacing: 2px;
 }
@@ -62,10 +58,11 @@ nav {
 
 nav ul {
 	list-style-type: none;
-	padding: .7em;
-	padding-left: 0.5 em;
+	padding: .6em;
+	padding-right: .7em;
+	padding-left: .2em;
 	margin: 0.5em;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 	line-height: 0;
 }
@@ -92,10 +89,10 @@ a:hover {
 .fr {
 	float: right;
 	background: #ECF6FF;
-	padding: 0.7em;
+	padding: 0.5em;
 	font-size: 1.1em;
 	width: 20;
-	height: 5em;
+	height: 3.5em;
 	margin: 0;
 }
 
@@ -118,4 +115,13 @@ a:hover {
 .column{
 	width: 20%;
 	display: inline-block;
+}
+
+
+.eliminate{
+	margin-top:0;
+}
+
+.am {
+	padding-top: .9em;
 }
