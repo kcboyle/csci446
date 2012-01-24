@@ -5,6 +5,10 @@ body {
 	margin-top:0;
 }
 
+.am {
+	padding-top: 1em;
+}
+
 div {
 	vertical-align: top;
 }
