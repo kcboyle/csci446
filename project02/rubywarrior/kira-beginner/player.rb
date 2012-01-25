@@ -1,8 +1,8 @@
 class Player
   def play_turn(warrior)
     # add your code here
-	if warrior.feel.captive?
-		warrior.rescue!
+	if warrior.feel.wall?
+		warrior.pivot!
 	else
 		if warrior.feel.empty?
 			if warrior.health < 20
