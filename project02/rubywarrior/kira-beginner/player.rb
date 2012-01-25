@@ -15,7 +15,6 @@ class Player
 		else 
 			if warrior.feel.enemy?
 			warrior.attack!
-			end
 		end
 	end
 	@health = warrior.health
