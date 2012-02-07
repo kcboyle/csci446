@@ -61,4 +61,12 @@ class OrdersControllerTest < ActionController::TestCase
     get :new
     assert_response :success
   end
+
+  test "should create order" do
+    assert_difference( 'Order.count') do
+      post :create, order: @order.attributes
+    end
+
+    assert_redirected_to store_path
+  end
 end
