@@ -21114,3 +21114,609 @@ Served asset /cs.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/ruby.jpg" for 98.245.73.12 at 2012-02-06 22:55:50 -0700
 Served asset /ruby.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 98.245.73.12 at 2012-02-06 23:06:40 -0700
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.6ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (53.3ms)
+Compiled application.css  (109ms)  (pid 17553)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 10
+  [1m[36mLineItem Load (1.5ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 9 LIMIT 1[0m
+  Rendered line_items/_line_item.html.erb (13.1ms)
+  Rendered carts/_cart.html.erb (3237.7ms)
+Completed 500 Internal Server Error in 3650ms
+
+ActionView::Template::Error (undefined local variable or method `new_order_path' for #<#<Class:0x00000003b93838>:0x000000038610e8>):
+    9:  	
+    10: 	</table>
+    11: 
+    12:   <%= button_to "Checkout", new_order_path, method: :get %>
+    13: 	<%= button_to 'Empty cart', cart, method: :delete,
+    14: 		confirm: 'Are you sure?' %>
+  app/views/carts/_cart.html.erb:12:in `_app_views_carts__cart_html_erb___4545020352011667179_24017900'
+  app/views/layouts/application.html.erb:19:in `block in _app_views_layouts_application_html_erb___3770082234847341382_21105220'
+  app/helpers/application_helper.rb:8:in `hidden_div_if'
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___3770082234847341382_21105220'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.0ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20120206014445)
+Migrating to CreateCarts (20120206213636)
+Migrating to CreateLineItems (20120206214940)
+Migrating to AddQuantityToLineItems (20120206235022)
+Migrating to CombineItemsInCart (20120207002603)
+Migrating to CreateOrders (20120207061609)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20120206014445)
+Migrating to CreateCarts (20120206213636)
+Migrating to CreateLineItems (20120206214940)
+Migrating to AddQuantityToLineItems (20120206235022)
+Migrating to CombineItemsInCart (20120207002603)
+Migrating to CreateOrders (20120207062109)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" text, "email" varchar(255), "pay_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120207062109')[0m
+  [1m[35m (167.1ms)[0m  commit transaction
+Migrating to AddOrderIdToLineItem (20120207062143)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "line_items" ADD "order_id" integer
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120207062143')[0m
+  [1m[35m (159.9ms)[0m  commit transaction
+  [1m[36m (1.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("carts")[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("line_items")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("orders")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("products")
+
+
+Started GET "/" for 98.245.73.12 at 2012-02-06 23:22:17 -0700
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.6ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (127.9ms)
+Compiled orders.css  (4ms)  (pid 17553)
+Compiled application.css  (94ms)  (pid 17553)
+Compiled orders.js  (391ms)  (pid 17553)
+Compiled application.js  (442ms)  (pid 17553)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 10
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 9 LIMIT 1[0m
+  Rendered line_items/_line_item.html.erb (13.1ms)
+  Rendered carts/_cart.html.erb (65.3ms)
+Completed 200 OK in 1057ms (Views: 978.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /application.css - 200 OK (35ms)
+
+
+Started GET "/assets/carts.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /orders.css - 200 OK (6ms)
+
+
+Started GET "/assets/products.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /carts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /orders.js - 200 OK (6ms)
+
+
+Started GET "/assets/products.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /application.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/ruby.jpg" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /ruby.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cs.jpg" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /cs.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rtp.jpg" for 98.245.73.12 at 2012-02-06 23:22:19 -0700
+Served asset /rtp.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/line_items?product_id=8" for 98.245.73.12 at 2012-02-06 23:22:40 -0700
+
+
+Started GET "/" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (18.0ms)
+Processing by LineItemsController#create as JS
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "product_id"=>"8"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 10
+  [1m[36mLineItem Load (0.5ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  [1m[36mCart Load (13.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 9 LIMIT 1[0m
+  Rendered line_items/_line_item.html.erb (9.5ms)
+  Rendered carts/_cart.html.erb (19.4ms)
+Completed 200 OK in 90ms (Views: 82.7ms | ActiveRecord: 3.3ms)
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "8"]]
+
+
+Started GET "/assets/carts.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /carts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /line_items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /jquery-ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/carts.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /carts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /line_items.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+  [1m[36mLineItem Load (1.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10 AND "line_items"."product_id" = 8 LIMIT 1[0m
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/store.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /store.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:42 -0700
+Served asset /application.js - 304 Not Modified (15ms)
+  [1m[35m (0.9ms)[0m  begin transaction
+  [1m[36m (1.5ms)[0m  [1mUPDATE "line_items" SET "quantity" = 2, "updated_at" = '2012-02-07 06:22:42.840189' WHERE "line_items"."id" = 24[0m
+  [1m[35m (165.3ms)[0m  commit transaction
+  [1m[36mLineItem Load (1.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 9 LIMIT 1[0m
+  Rendered line_items/_line_item.html.erb (79.3ms)
+  Rendered carts/_cart.html.erb (111.7ms)
+  Rendered line_items/create.js.erb (231.1ms)
+Completed 200 OK in 1022ms (Views: 288.3ms | ActiveRecord: 188.2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:45 -0700
+Served asset /orders.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/store.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:45 -0700
+Served asset /store.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/logo.png" for 98.245.73.12 at 2012-02-06 23:22:45 -0700
+Served asset /logo.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rtp.jpg" for 98.245.73.12 at 2012-02-06 23:22:45 -0700
+
+
+Started GET "/assets/ruby.jpg" for 98.245.73.12 at 2012-02-06 23:22:45 -0700
+
+
+Started GET "/assets/cs.jpg" for 98.245.73.12 at 2012-02-06 23:22:45 -0700
+Served asset /rtp.jpg - 304 Not Modified (1ms)
+Served asset /cs.jpg - 304 Not Modified (5ms)
+Served asset /ruby.jpg - 304 Not Modified (10ms)
+
+
+Started POST "/line_items?product_id=10" for 98.245.73.12 at 2012-02-06 23:22:47 -0700
+Processing by LineItemsController#create as JS
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "product_id"=>"10"}
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mLineItem Load (0.5ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10 AND "line_items"."product_id" = 10 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "order_id", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["cart_id", 10], ["created_at", Tue, 07 Feb 2012 06:22:47 UTC +00:00], ["order_id", nil], ["product_id", 10], ["quantity", 1], ["updated_at", Tue, 07 Feb 2012 06:22:47 UTC +00:00]]
+  [1m[36m (123.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mLineItem Load (0.6ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 9 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 LIMIT 1[0m
+  Rendered line_items/_line_item.html.erb (13.5ms)
+  Rendered carts/_cart.html.erb (26.5ms)
+  Rendered line_items/create.js.erb (30.0ms)
+Completed 200 OK in 183ms (Views: 33.7ms | ActiveRecord: 128.1ms)
+
+
+Started POST "/line_items?product_id=9" for 98.245.73.12 at 2012-02-06 23:22:48 -0700
+Processing by LineItemsController#create as JS
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "product_id"=>"9"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35mLineItem Load (0.6ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10 AND "line_items"."product_id" = 9 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  UPDATE "line_items" SET "quantity" = 2, "updated_at" = '2012-02-07 06:22:48.542724' WHERE "line_items"."id" = 25
+  [1m[36m (127.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mLineItem Load (0.6ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 9 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 LIMIT 1[0m
+  Rendered line_items/_line_item.html.erb (13.5ms)
+  Rendered carts/_cart.html.erb (24.6ms)
+  Rendered line_items/create.js.erb (28.1ms)
+Completed 200 OK in 179ms (Views: 31.9ms | ActiveRecord: 131.2ms)
+
+
+Started DELETE "/carts/10" for 98.245.73.12 at 2012-02-06 23:22:51 -0700
+Processing by CartsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "id"=>"10"}
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mLineItem Load (0.6ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 10
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 24]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 25]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 26]]
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = ?  [["id", 10]]
+  [1m[36m (127.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://kicombs.tj.lcarsos.com/
+Completed 302 Found in 153ms (ActiveRecord: 130.0ms)
+
+
+Started GET "/" for 98.245.73.12 at 2012-02-06 23:22:51 -0700
+Processing by StoreController#index as HTML
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Tue, 07 Feb 2012 06:22:51 UTC +00:00], ["updated_at", Tue, 07 Feb 2012 06:22:51 UTC +00:00]]
+  [1m[35m (133.8ms)[0m  commit transaction
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (126.6ms)
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 11
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (8.1ms)
+Completed 200 OK in 457ms (Views: 253.5ms | ActiveRecord: 137.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+Served asset /carts.css - 304 Not Modified (10ms)
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/store.css?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /line_items.css - 304 Not Modified (12ms)
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/carts.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /carts.js - 304 Not Modified (8ms)
+Served asset /jquery-ui.js - 304 Not Modified (17ms)
+Served asset /line_items.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/orders.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/products.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/store.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /orders.js - 304 Not Modified (7ms)
+Served asset /products.js - 304 Not Modified (8ms)
+Served asset /store.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /application.js - 304 Not Modified (98ms)
+
+
+Started GET "/assets/logo.png" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/rtp.jpg" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/cs.jpg" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+
+
+Started GET "/assets/ruby.jpg" for 98.245.73.12 at 2012-02-06 23:22:52 -0700
+Served asset /logo.png - 304 Not Modified (8ms)
+Served asset /cs.jpg - 304 Not Modified (0ms)
+Served asset /ruby.jpg - 304 Not Modified (1ms)
+Served asset /rtp.jpg - 304 Not Modified (6ms)
+
+
+Started POST "/line_items?product_id=8" for 98.245.73.12 at 2012-02-06 23:22:57 -0700
+Processing by LineItemsController#create as JS
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "product_id"=>"8"}
+  [1m[36mCart Load (12.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 11 AND "line_items"."product_id" = 8 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "order_id", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["cart_id", 11], ["created_at", Tue, 07 Feb 2012 06:22:58 UTC +00:00], ["order_id", nil], ["product_id", 8], ["quantity", 1], ["updated_at", Tue, 07 Feb 2012 06:22:58 UTC +00:00]]
+  [1m[35m (130.4ms)[0m  commit transaction
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 11[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  Rendered line_items/_line_item.html.erb (38.3ms)
+  Rendered carts/_cart.html.erb (59.3ms)
+  Rendered line_items/create.js.erb (81.2ms)
+Completed 200 OK in 660ms (Views: 164.7ms | ActiveRecord: 152.2ms)
+
+
+Started GET "/orders/new" for 98.245.73.12 at 2012-02-06 23:23:00 -0700
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (20.4ms)
+  Rendered orders/new.html.erb within layouts/application (76.1ms)
+Completed 200 OK in 223ms (Views: 188.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:00 -0700
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/carts.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /line_items.css - 304 Not Modified (0ms)
+Served asset /carts.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/orders.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/products.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/store.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /store.css - 304 Not Modified (0ms)
+Served asset /products.css - 304 Not Modified (10ms)
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /jquery.js - 304 Not Modified (20ms)
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+Served asset /carts.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/orders.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/store.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+
+
+Started GET "/assets/products.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /orders.js - 304 Not Modified (5ms)
+Served asset /products.js - 304 Not Modified (1ms)
+Served asset /store.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /line_items.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/logo.png" for 98.245.73.12 at 2012-02-06 23:23:01 -0700
+Served asset /logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/" for 98.245.73.12 at 2012-02-06 23:23:06 -0700
+Processing by StoreController#index as HTML
+  [1m[36mCart Load (12.3ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  Rendered store/index.html.erb within layouts/application (183.9ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 11[0m
+  [1m[35mLineItem Load (0.6ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 11
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1[0m
+  Rendered line_items/_line_item.html.erb (20.7ms)
+  Rendered carts/_cart.html.erb (123.7ms)
+Completed 200 OK in 962ms (Views: 691.6ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/carts.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+
+
+Started GET "/assets/products.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+Served asset /carts.css - 304 Not Modified (9ms)
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+
+
+Started GET "/assets/store.css?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+Served asset /line_items.css - 304 Not Modified (10ms)
+Served asset /orders.css - 304 Not Modified (10ms)
+Served asset /store.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:07 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+Served asset /line_items.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/products.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /store.js - 304 Not Modified (8ms)
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rtp.jpg" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+
+
+Started GET "/assets/cs.jpg" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+
+
+Started GET "/assets/ruby.jpg" for 98.245.73.12 at 2012-02-06 23:23:08 -0700
+Served asset /ruby.jpg - 304 Not Modified (0ms)
+Served asset /rtp.jpg - 304 Not Modified (1ms)
+Served asset /cs.jpg - 304 Not Modified (5ms)
