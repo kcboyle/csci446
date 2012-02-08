@@ -32774,3 +32774,2213 @@ Served asset /logo.png - 304 Not Modified (0ms)
   [1m[36m (117.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206014445')[0m
   [1m[35m (134.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120207062143')
   [1m[36m (125.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206213636')[0m
+
+
+Started GET "/users" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+  Rendered users/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 99ms (Views: 67.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /carts.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /store.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /carts.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /line_items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /products.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /sessions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /application.js - 304 Not Modified (81ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:08:58 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  Rendered users/_form.html.erb (34.7ms)
+  Rendered users/new.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 115ms (Views: 108.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:00 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 146ms (Views: 140.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /carts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /line_items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /line_items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:02 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 138.67.200.235 at 2012-02-07 17:09:07 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (207.9ms)
+Completed 200 OK in 557ms (Views: 441.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+Served asset /admin.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:08 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+Served asset /users.css - 304 Not Modified (25ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+Served asset /admin.js - 304 Not Modified (1ms)
+Served asset /jquery_ujs.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+Served asset /line_items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+Served asset /products.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+Served asset /orders.js - 304 Not Modified (9ms)
+Served asset /sessions.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:09 -0700
+Served asset /application.js - 304 Not Modified (44ms)
+Served asset /store.js - 304 Not Modified (157ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:12 -0700
+Served asset /line_items.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:13 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:13 -0700
+Served asset /jquery-ui.js - 304 Not Modified (21ms)
+Served asset /carts.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:13 -0700
+
+
+Started GET "/assets/ruby.jpg" for 138.67.200.235 at 2012-02-07 17:09:13 -0700
+
+
+Started GET "/assets/rtp.jpg" for 138.67.200.235 at 2012-02-07 17:09:13 -0700
+
+
+Started GET "/assets/cs.jpg" for 138.67.200.235 at 2012-02-07 17:09:13 -0700
+Served asset /logo.png - 304 Not Modified (7ms)
+Served asset /ruby.jpg - 304 Not Modified (8ms)
+Served asset /rtp.jpg - 304 Not Modified (7ms)
+Served asset /cs.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/products/8" for 138.67.200.235 at 2012-02-07 17:09:15 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered products/show.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 411ms (Views: 295.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /admin.css - 304 Not Modified (11ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /line_items.css - 304 Not Modified (10ms)
+Served asset /carts.css - 304 Not Modified (26ms)
+Served asset /products.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+Served asset /sessions.css - 304 Not Modified (12ms)
+Served asset /users.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+Served asset /jquery-ui.js - 304 Not Modified (21ms)
+Served asset /carts.js - 304 Not Modified (1ms)
+Served asset /admin.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /line_items.js - 304 Not Modified (7ms)
+Served asset /orders.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /products.js - 304 Not Modified (9ms)
+Served asset /store.js - 304 Not Modified (1ms)
+Served asset /users.js - 304 Not Modified (1ms)
+Served asset /sessions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /application.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:16 -0700
+Served asset /logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/products/8/edit" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered products/_form.html.erb (41.1ms)
+  Rendered products/edit.html.erb within layouts/application (116.6ms)
+Completed 200 OK in 180ms (Views: 171.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /line_items.css - 304 Not Modified (1ms)
+Served asset /carts.css - 304 Not Modified (1ms)
+Served asset /application.css - 304 Not Modified (18ms)
+Served asset /products.css - 304 Not Modified (1ms)
+Served asset /orders.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /users.css - 304 Not Modified (1ms)
+Served asset /sessions.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /admin.js - 304 Not Modified (6ms)
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /line_items.js - 304 Not Modified (0ms)
+Served asset /orders.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /products.js - 304 Not Modified (0ms)
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:19 -0700
+Served asset /logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/products/new" for 138.67.200.235 at 2012-02-07 17:09:24 -0700
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  Rendered products/_form.html.erb (39.9ms)
+  Rendered products/new.html.erb within layouts/application (114.2ms)
+Completed 200 OK in 508ms (Views: 342.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /carts.css - 304 Not Modified (0ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /line_items.css - 304 Not Modified (10ms)
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /sessions.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /store.css - 304 Not Modified (9ms)
+Served asset /jquery.js - 304 Not Modified (15ms)
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /jquery-ui.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /line_items.js - 304 Not Modified (5ms)
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /products.js - 304 Not Modified (1ms)
+Served asset /users.js - 304 Not Modified (7ms)
+Served asset /store.js - 304 Not Modified (8ms)
+Served asset /application.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:25 -0700
+Served asset /logo.png - 304 Not Modified (4ms)
+
+
+Started POST "/products" for 138.67.200.235 at 2012-02-07 17:09:37 -0700
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "product"=>{"title"=>"sadf", "description"=>"adfassdfa", "image_url"=>"blab.jpg", "price"=>"8.00"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.4ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = 'sadf' LIMIT 1[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "products" ("created_at", "description", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 08 Feb 2012 00:09:37 UTC +00:00], ["description", "adfassdfa"], ["image_url", "blab.jpg"], ["price", #<BigDecimal:2bceab0,'0.8E1',9(18)>], ["title", "sadf"], ["updated_at", Wed, 08 Feb 2012 00:09:37 UTC +00:00]]
+  [1m[36m (123.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://kicombs.tj.lcarsos.com/products/11
+Completed 302 Found in 247ms (ActiveRecord: 130.1ms)
+
+
+Started GET "/products/11" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  Rendered products/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 69ms (Views: 60.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /carts.css - 304 Not Modified (10ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /line_items.css - 304 Not Modified (10ms)
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /products.css - 304 Not Modified (8ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /store.css - 304 Not Modified (18ms)
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /admin.js - 304 Not Modified (7ms)
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /carts.js - 304 Not Modified (5ms)
+Served asset /line_items.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /orders.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /sessions.js - 304 Not Modified (8ms)
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /store.js - 304 Not Modified (9ms)
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:38 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (213.9ms)
+Completed 200 OK in 277ms (Views: 267.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /carts.css - 304 Not Modified (1ms)
+Served asset /line_items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+Served asset /products.css - 304 Not Modified (0ms)
+Served asset /orders.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /users.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+Served asset /jquery.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /store.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (8ms)
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/cs.jpg" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/rtp.jpg" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/blab.jpg" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+
+
+Started GET "/assets/ruby.jpg" for 138.67.200.235 at 2012-02-07 17:09:40 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+Served asset /ruby.jpg - 304 Not Modified (1ms)
+Served asset /rtp.jpg - 304 Not Modified (7ms)
+Served asset /cs.jpg - 304 Not Modified (5ms)
+Served asset /blab.jpg - 404 Not Found (32ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blab.jpg"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  railties (3.2.1) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.11) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.11) lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  passenger (3.0.11) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.11) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started DELETE "/products/11" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."product_id" = 11
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 11]]
+  [1m[35m (144.9ms)[0m  commit transaction
+Redirected to http://kicombs.tj.lcarsos.com/products
+Completed 302 Found in 286ms (ActiveRecord: 148.6ms)
+
+
+Started GET "/products" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 79ms (Views: 71.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /carts.css - 304 Not Modified (1ms)
+Served asset /admin.css - 304 Not Modified (16ms)
+Served asset /line_items.css - 304 Not Modified (1ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /users.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /carts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /line_items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /orders.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /products.js - 304 Not Modified (9ms)
+Served asset /store.js - 304 Not Modified (1ms)
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:44 -0700
+Served asset /jquery.js - 304 Not Modified (90ms)
+Served asset /application.js - 304 Not Modified (118ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:45 -0700
+
+
+Started GET "/assets/cs.jpg" for 138.67.200.235 at 2012-02-07 17:09:45 -0700
+
+
+Started GET "/assets/ruby.jpg" for 138.67.200.235 at 2012-02-07 17:09:45 -0700
+
+
+Started GET "/assets/rtp.jpg" for 138.67.200.235 at 2012-02-07 17:09:45 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+Served asset /ruby.jpg - 304 Not Modified (1ms)
+Served asset /rtp.jpg - 304 Not Modified (4ms)
+Served asset /cs.jpg - 304 Not Modified (8ms)
+
+
+Started DELETE "/logout" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak="}
+Redirected to http://kicombs.tj.lcarsos.com/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.6ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (38.3ms)
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 18
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 18[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  Rendered line_items/_line_item.html.erb (77.4ms)
+  Rendered carts/_cart.html.erb (130.5ms)
+Completed 200 OK in 410ms (Views: 359.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /carts.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /application.css - 304 Not Modified (16ms)
+Served asset /line_items.css - 304 Not Modified (0ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /products.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /sessions.css - 304 Not Modified (10ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /jquery-ui.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /admin.js - 304 Not Modified (0ms)
+Served asset /line_items.js - 304 Not Modified (1ms)
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:47 -0700
+Served asset /store.js - 304 Not Modified (1ms)
+Served asset /users.js - 304 Not Modified (7ms)
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:48 -0700
+
+
+Started GET "/assets/cs.jpg" for 138.67.200.235 at 2012-02-07 17:09:48 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rtp.jpg" for 138.67.200.235 at 2012-02-07 17:09:48 -0700
+
+
+Started GET "/assets/ruby.jpg" for 138.67.200.235 at 2012-02-07 17:09:48 -0700
+Served asset /cs.jpg - 304 Not Modified (0ms)
+Served asset /rtp.jpg - 304 Not Modified (0ms)
+Served asset /ruby.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/orders/new" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (74.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 18[0m
+  Rendered orders/_form.html.erb (19.3ms)
+  Rendered orders/new.html.erb within layouts/application (22.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 18
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 18[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  Rendered line_items/_line_item.html.erb (21.8ms)
+  Rendered carts/_cart.html.erb (72.8ms)
+Completed 200 OK in 441ms (Views: 152.7ms | ActiveRecord: 78.3ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /carts.css - 304 Not Modified (10ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /line_items.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+Served asset /products.css - 304 Not Modified (10ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+Served asset /store.css - 304 Not Modified (12ms)
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /carts.js - 304 Not Modified (1ms)
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /orders.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /line_items.js - 304 Not Modified (9ms)
+Served asset /products.js - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:50 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:51 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:51 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:51 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/orders" for 138.67.200.235 at 2012-02-07 17:09:52 -0700
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "order"=>{"name"=>"", "address"=>"", "email"=>"", "pay_type"=>""}, "commit"=>"Place Order"}
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35mLineItem Load (0.5ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 18
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m
+  Rendered orders/_form.html.erb (25.7ms)
+  Rendered orders/new.html.erb within layouts/application (28.1ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 18
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 18[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 8 LIMIT 1
+  Rendered line_items/_line_item.html.erb (5.1ms)
+  Rendered carts/_cart.html.erb (14.1ms)
+Completed 200 OK in 135ms (Views: 98.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:52 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:52 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:52 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:52 -0700
+Served asset /admin.css - 304 Not Modified (1ms)
+Served asset /carts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:52 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:52 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+Served asset /orders.css - 304 Not Modified (0ms)
+Served asset /products.css - 304 Not Modified (0ms)
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+Served asset /store.css - 304 Not Modified (11ms)
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /admin.js - 304 Not Modified (1ms)
+Served asset /line_items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /carts.js - 304 Not Modified (11ms)
+Served asset /jquery_ujs.js - 304 Not Modified (29ms)
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+Served asset /products.js - 304 Not Modified (21ms)
+Served asset /users.js - 304 Not Modified (8ms)
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:53 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/carts/18" for 138.67.200.235 at 2012-02-07 17:09:55 -0700
+Processing by CartsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "id"=>"18"}
+  [1m[35mCart Load (0.7ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mLineItem Load (0.4ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 18
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 34]]
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = ?  [["id", 18]]
+  [1m[36m (144.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://kicombs.tj.lcarsos.com/
+Completed 302 Found in 342ms (ActiveRecord: 148.0ms)
+
+
+Started GET "/" for 138.67.200.235 at 2012-02-07 17:09:55 -0700
+Processing by StoreController#index as HTML
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Wed, 08 Feb 2012 00:09:55 UTC +00:00], ["updated_at", Wed, 08 Feb 2012 00:09:55 UTC +00:00]]
+  [1m[35m (130.4ms)[0m  commit transaction
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (168.6ms)
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = 19
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (11.3ms)
+Completed 200 OK in 422ms (Views: 238.2ms | ActiveRecord: 134.4ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /admin.css - 304 Not Modified (1ms)
+Served asset /carts.css - 304 Not Modified (1ms)
+Served asset /line_items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /products.css - 304 Not Modified (1ms)
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+Served asset /store.css - 304 Not Modified (3ms)
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /sessions.css - 304 Not Modified (10ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /jquery-ui.js - 304 Not Modified (10ms)
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /carts.js - 304 Not Modified (1ms)
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+Served asset /line_items.js - 304 Not Modified (1ms)
+Served asset /application.css - 304 Not Modified (86ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+Served asset /products.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /sessions.js - 304 Not Modified (10ms)
+Served asset /store.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (1ms)
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/cs.jpg" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/ruby.jpg" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+
+
+Started GET "/assets/rtp.jpg" for 138.67.200.235 at 2012-02-07 17:09:56 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+Served asset /cs.jpg - 304 Not Modified (0ms)
+Served asset /rtp.jpg - 304 Not Modified (0ms)
+Served asset /ruby.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/orders" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://kicombs.tj.lcarsos.com/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /admin.css - 304 Not Modified (1ms)
+Served asset /carts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /line_items.css - 304 Not Modified (1ms)
+Served asset /application.css - 304 Not Modified (17ms)
+Served asset /orders.css - 304 Not Modified (8ms)
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /store.css - 304 Not Modified (0ms)
+Served asset /sessions.css - 304 Not Modified (4ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /admin.js - 304 Not Modified (0ms)
+Served asset /carts.js - 304 Not Modified (6ms)
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /orders.js - 304 Not Modified (0ms)
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /sessions.js - 304 Not Modified (5ms)
+Served asset /store.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:09:59 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 138.67.200.235 at 2012-02-07 17:10:04 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "name"=>"dave", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'dave' LIMIT 1
+Redirected to http://kicombs.tj.lcarsos.com/admin
+Completed 302 Found in 183ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "orders" 
+  Rendered admin/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 137ms (Views: 128.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /products.css - 304 Not Modified (0ms)
+Served asset /carts.css - 304 Not Modified (10ms)
+Served asset /line_items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /orders.css - 304 Not Modified (11ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /line_items.js - 304 Not Modified (0ms)
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:10:05 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 138.67.200.235 at 2012-02-07 17:10:09 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+  Rendered users/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 348ms (Views: 305.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /admin.css - 304 Not Modified (0ms)
+Served asset /carts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /line_items.css - 304 Not Modified (1ms)
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+Served asset /application.css - 304 Not Modified (65ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /line_items.js - 304 Not Modified (0ms)
+Served asset /products.js - 304 Not Modified (1ms)
+Served asset /orders.js - 304 Not Modified (1ms)
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:10:10 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/3/edit" for 138.67.200.235 at 2012-02-07 17:10:12 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered users/_form.html.erb (16.7ms)
+  Rendered users/edit.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 157ms (Views: 148.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /admin.css - 304 Not Modified (1ms)
+Served asset /carts.css - 304 Not Modified (1ms)
+Served asset /line_items.css - 304 Not Modified (1ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /products.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (1ms)
+Served asset /store.css - 304 Not Modified (1ms)
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /admin.js - 304 Not Modified (1ms)
+Served asset /carts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /line_items.js - 304 Not Modified (1ms)
+Served asset /products.js - 304 Not Modified (0ms)
+Served asset /orders.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /store.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:10:13 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/3" for 138.67.200.235 at 2012-02-07 17:10:15 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered users/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 68ms (Views: 59.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /carts.css - 304 Not Modified (0ms)
+Served asset /admin.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /line_items.css - 304 Not Modified (0ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /store.css - 304 Not Modified (1ms)
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /line_items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /application.js - 304 Not Modified (17ms)
+Served asset /products.js - 304 Not Modified (99ms)
+Served asset /store.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:10:16 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/3" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"55jB9nR7bfHJkJb65VhyFiOJcvOwTJnmWAJ6/GVQGak=", "id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Redirected to http://kicombs.tj.lcarsos.com/users
+Completed 302 Found in 21ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/users" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+  Rendered users/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 77ms (Views: 70.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/orders.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/admin.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/carts.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /line_items.css - 304 Not Modified (1ms)
+Served asset /orders.css - 304 Not Modified (1ms)
+Served asset /admin.css - 304 Not Modified (2ms)
+Served asset /carts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /products.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/store.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/users.css?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /sessions.css - 304 Not Modified (1ms)
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+Served asset /users.css - 304 Not Modified (1ms)
+Served asset /store.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/admin.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/line_items.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/carts.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /admin.js - 304 Not Modified (1ms)
+Served asset /line_items.js - 304 Not Modified (1ms)
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+Served asset /carts.js - 304 Not Modified (1ms)
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/store.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 138.67.200.235 at 2012-02-07 17:10:20 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /store.js - 304 Not Modified (8ms)
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 17:10:21 -0700
+Served asset /logo.png - 304 Not Modified (0ms)
