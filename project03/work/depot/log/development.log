@@ -32736,3 +32736,41 @@ Served asset /application.js - 304 Not Modified (71ms)
 
 Started GET "/assets/logo.png" for 138.67.200.235 at 2012-02-07 16:59:43 -0700
 Served asset /logo.png - 304 Not Modified (0ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (124.8ms)[0m  [1mCREATE TABLE "carts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (118.3ms)[0m  CREATE TABLE "line_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "cart_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "quantity" integer DEFAULT 1, "order_id" integer) 
+  [1m[36m (146.3ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" text, "email" varchar(255), "pay_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (138.5ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (139.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (149.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (151.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (123.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120207195217')
+  [1m[36m (133.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206214940')[0m
+  [1m[35m (142.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120206235022')
+  [1m[36m (142.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120207062109')[0m
+  [1m[35m (158.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120207002603')
+  [1m[36m (133.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206014445')[0m
+  [1m[35m (118.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120207062143')
+  [1m[36m (142.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206213636')[0m
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (137.9ms)[0m  [1mCREATE TABLE "carts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (135.1ms)[0m  CREATE TABLE "line_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "cart_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "quantity" integer DEFAULT 1, "order_id" integer) 
+  [1m[36m (131.3ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" text, "email" varchar(255), "pay_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (121.9ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (139.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (132.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (133.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (139.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120207195217')
+  [1m[36m (133.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206214940')[0m
+  [1m[35m (127.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120206235022')
+  [1m[36m (117.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120207062109')[0m
+  [1m[35m (117.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120207002603')
+  [1m[36m (117.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206014445')[0m
+  [1m[35m (134.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120207062143')
+  [1m[36m (125.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120206213636')[0m
