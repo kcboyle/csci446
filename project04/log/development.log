@@ -924,3 +924,107 @@ Served asset /application.css - 304 Not Modified (102ms)
 
 Started GET "/assets/jquery.js?body=1" for 138.67.205.249 at 2012-02-15 22:52:35 -0700
 Served asset /jquery.js - 304 Not Modified (18ms)
+
+
+Started GET "/" for 138.67.205.249 at 2012-02-15 23:00:23 -0700
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (10.4ms)
+Compiled posts.css  (68ms)  (pid 4018)
+Compiled scaffolds.css  (58ms)  (pid 4018)
+Compiled application.css  (176ms)  (pid 4018)
+Compiled posts.js  (389ms)  (pid 4018)
+Compiled application.js  (487ms)  (pid 4018)
+Completed 200 OK in 842ms (Views: 840.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.67.205.249 at 2012-02-15 23:00:25 -0700
+
+
+Started GET "/assets/articles.css?body=1" for 138.67.205.249 at 2012-02-15 23:00:25 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 138.67.205.249 at 2012-02-15 23:00:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.67.205.249 at 2012-02-15 23:00:25 -0700
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.67.205.249 at 2012-02-15 23:00:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/articles.js?body=1" for 138.67.205.249 at 2012-02-15 23:00:25 -0700
+Served asset /articles.js - 304 Not Modified (10ms)
+Served asset /scaffolds.css - 200 OK (14ms)
+Served asset /posts.css - 200 OK (17ms)
+
+
+Started GET "/assets/posts.js?body=1" for 138.67.205.249 at 2012-02-15 23:00:25 -0700
+Served asset /posts.js - 200 OK (12ms)
+Served asset /articles.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.67.205.249 at 2012-02-15 23:00:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 138.67.205.249 at 2012-02-15 23:00:28 -0700
+Served asset /jquery.js - 304 Not Modified (19ms)
+Served asset /application.js - 304 Not Modified (33ms)
+
+
+Started GET "/post" for 138.67.205.249 at 2012-02-15 23:00:30 -0700
+
+ActionController::RoutingError (No route matches [GET] "/post"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  railties (3.2.1) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.11) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.11) lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  passenger (3.0.11) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.11) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.6ms)
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (184.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (141.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePosts (20120216055910)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "title" varchar(255), "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120216055910')
+  [1m[36m (143.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("posts")
