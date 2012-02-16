@@ -1,4 +1,6 @@
 Articles::Application.routes.draw do
+  resources :posts
+
   get "articles/index"
 
   # The priority is based upon order of creation:
