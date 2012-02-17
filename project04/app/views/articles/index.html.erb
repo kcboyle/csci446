@@ -1,21 +1,26 @@
+<% if notice %>
+<p id="notice">
+<%= notice %></p>
+<% end %>
+
 <h1>All the World's Articles</h1>
 
-<table>
-  <tr>
+<table class="article_table" >
+  <tr class="list_header" >
     <th>Title</th>
     <th>Author Name</th>
     <th>Body</th>
-    <th>Creation Date</th>
+    <th class="center_align">Creation Date</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @articles.each do |article| %>
-  <tr>
+  <tr class="<%= cycle( 'list_line_odd', 'list_line_even') %> listing_articles" >
     <td><%= article. title %></td>
     <td><%= article.name %></td>
-    <td><%= article.content %></td>
+    <td><%= truncate(strip_tags(article.content), length: 30) %></td>
     <td><%= article.created_at.strftime('%A, %b. %d %Y') %></td>
     <td><%= link_to 'Show', article %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
@@ -26,4 +31,5 @@
 
 <br />
 
-<%= link_to 'New Article', new_article_path %>
+<%= link_to image_tag("add.png"), new_article_path %><%= link_to (tooltip "Create an Article", { :tooltip => 'you know you need to' }, :class => 'mytooltip'), new_article_path %>
+

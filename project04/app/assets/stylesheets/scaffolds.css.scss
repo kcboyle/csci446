@@ -1,14 +1,18 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Comic Sans MS, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Comic Sans MS, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
+
+h1 {
+  padding-bottom: 1em;
+}
 
 pre {
   background-color: #eee;
@@ -16,9 +20,10 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000;
+  color: black;
+  text-decoration: none;
   &:visited {
-    color: #666; }
+    color: black; }
   &:hover {
     color: #fff;
     background-color: #000; } }
@@ -34,6 +39,42 @@ div {
   padding: 2px;
   background-color: red;
   display: table; }
+
+.list_header {
+  background: Silver;
+}
+.list_line_odd {
+  background: #E5E5E5;
+
+}
+
+.list_line_even {
+  background: White;
+}
+
+.listing_articles {
+}
+
+.list_image {
+  width: 5px;
+  height: 5 px;
+}
+
+.article_table {
+  text-align: left;
+  border: 1px solid black;
+}
+
+.center_align {
+  text-align: center;
+}
+
+.new_article {
+  cursor: help;
+  color: black;
+  border-bottom: 1px dotted green
+}
+
 
 #error_explanation {
   width: 450px;
