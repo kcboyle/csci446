@@ -1,2 +1,15 @@
-<h>Hello, Rails!</h1>
-<%= link_to "All Articles", posts_path %>
+<% if notice %>
+<p id="notice">
+<%= notice %>
+</p>
+<% end %>
+
+<h>Articl.es</h1>
+
+<% @posts.each do |posts| %>
+  <div>
+    <h3> <%= post.title %> </h3>
+    <h3> <%= post.name %> </h3>
+    <h3> <%= post.content %> </h3>
+  </div>
+<% end %>
