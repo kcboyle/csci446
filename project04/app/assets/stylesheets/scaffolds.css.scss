@@ -3,14 +3,15 @@ body {
   color: #333;
   font-family: Comic Sans MS, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px; }
+  line-height: 18px; 
+  padding: 1em; }
 
 p, ol, ul, td {
   font-family: Comic Sans MS, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
 
-h1 {
+h2 {
   padding-bottom: 1em;
 }
 
@@ -25,8 +26,8 @@ a {
   &:visited {
     color: black; }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: white;
+    background-color: LightGrey; } }
 
 div {
   &.field, &.actions {
@@ -69,12 +70,19 @@ div {
   text-align: center;
 }
 
-.new_article {
-  cursor: help;
+.mytooltip {
+  cursor: pointer;
   color: black;
-  border-bottom: 1px dotted green
 }
 
+.column {
+  width: 50%;
+  display: inline-block;
+}
+
+.fr {
+  float: right;
+}
 
 #error_explanation {
   width: 450px;

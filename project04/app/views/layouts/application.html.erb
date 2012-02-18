@@ -6,9 +6,14 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
-<body >
 
+  <header>
+    <h1>Articl.es</h1>
+    <%= yield :subtitle %>
+    <%= yield :nav %>
+  </header>
+</head>
+<body>
 <%= yield %>
 
 </body>
