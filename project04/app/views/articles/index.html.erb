@@ -17,12 +17,12 @@
 <%= notice %></p>
 <% end %>
 
-<table class="article_table" >
+<table>
   <tr class="list_header" >
-    <th>Title</th>
-    <th>Author Name</th>
-    <th>Body</th>
-    <th class="center_align">Creation Date</th>
+    <th class="article_table" >Title</th>
+    <th class="article_table">Author Name</th>
+    <th class="article_table">Body</th>
+    <th class="article_table center_align">Creation Date</th>
     <th></th>
     <th></th>
     <th></th>
@@ -30,16 +30,21 @@
 
 <% @articles.each do |article| %>
   <tr class="<%= cycle( 'list_line_odd', 'list_line_even') %> listing_articles" >
-    <td><%= article. title %></td>
-    <td><%= article.name %></td>
-    <td><%= truncate(strip_tags(article.content), length: 30) %></td>
-    <td><%= article.created_at.strftime('%A, %b. %d %Y') %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, confirm: 'Are you sure?', method: :delete %></td>
+    <td class="article_table"><%= article.title %></td>
+    <td class="article_table"><%= article.name %></td>
+    <td class="article_table"><%= truncate(strip_tags(article.content), length: 30) %></td>
+    <td class="article_table"><%= article.created_at.strftime('%A, %b. %d %Y') %></td>
+    <td><%= link_to (tooltip (image_tag("zoom.png")), { :tooltip => 'View Article' },
+                                                    :class => 'mytooltip'), article %></td>
+    <td><%= link_to (tooltip (image_tag("page_edit.png")), { :tooltip => 'Edit Article' },
+                                                    :class => 'mytooltip'), edit_article_path(article) %></td>
+    <td><%= link_to (tooltip (image_tag("delete.png")), { :tooltip => 'Delete Article' },
+                                                             :class => 'mytooltip'), article, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
+
+<p><%= pluralize(@articles.count, "article") %></p>
 
 <br />
 
