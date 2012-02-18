@@ -46,4 +46,10 @@ class ArticlesControllerTest < ActionController::TestCase
 
     assert_redirected_to articles_path
   end
+
+  test "Should not create posts with invalid fields" do 
+    article = Article.new
+    assert !article.save, "Saved the post without a title"
+  end
+
 end
