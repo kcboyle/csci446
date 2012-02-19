@@ -7,13 +7,14 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <header>
-    <h1>Articl.es</h1>
-    <%= yield :subtitle %>
-    <%= yield :nav %>
-  </header>
 </head>
 <body>
+  <header class="center_align">
+    <h1>Articl.es</h1>
+    <p class="padded_to_fit_h1"><%= yield :subtitle %></p>
+  </header>
+  <%= yield :nav %>
+
 <%= yield %>
 
 </body>
