@@ -4,4 +4,5 @@ module ApplicationHelper
     html_options[:class] = html_options[:class] || 'tooltip'
     content_tag("span", content, html_options)
   end
+
 end
