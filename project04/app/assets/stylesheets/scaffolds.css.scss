@@ -35,6 +35,7 @@ div {
 
 ul {
   list_style_type: none;
+  padding-bottom: 1em;
 }
 
 li {
@@ -114,8 +115,26 @@ table {
   border-top: 1px solid black;
 }
 
-.home_page_padding {
+.home_page_header_padding {
   padding-bottom: 20px;
+}
+
+.home_page_number_articles_padding {
+  padding-top: 10px;
+}
+
+.home_page_subtitle {
+  padding-top: 5px;
+  padding-bottom: 4em;
+}
+
+.general_subtitle {
+  padding-top: 5px;
+  padding-bottom: 1em;
+}
+
+.before_content_padding{
+  padding-top: 2em;
 }
 
 #error_explanation {

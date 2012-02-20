@@ -1,5 +1,5 @@
 <% content_for :subtitle do %>
-  <div> ...what's "Articl" in Spanish anyway?</div>
+  <div class="general_subtitle"> ...what's "Articl" in Spanish anyway?</div>
 <% end %>
 
 <% content_for :nav do %>
@@ -35,8 +35,7 @@
    since <%= @article.created_at.strftime('%b. %d %Y') %>.
 </p>
 
-<p>
-  <b>Content:</b>
+<p class="before_content_padding">
   <%= @article.content %>
 </p>
 

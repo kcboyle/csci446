@@ -10,7 +10,11 @@
 </head>
 <body>
   <div class="center_align">
-    <h1>Articl.es</h1>
+  <% flash.each do |key, msg | %>
+    <% content_tag :div, msg, :id => key %>
+  <% end %>
+
+  <h1>Articl.es</h1>
     <div class="left_margin"><p><%= yield :subtitle %></p></div>
   </div>
   <%= yield :nav %>
