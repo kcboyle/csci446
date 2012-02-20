@@ -1,15 +1,16 @@
 <% content_for :subtitle do %>
-  <div> ...with a name .com hipsters love</div>
+  <div class="subtitle"> ...with a name .com hipsters love</div>
 <% end %>
 
 <% content_for :nav do %>
   <div>
-    <div class="column fr"> <%= link_to (tooltip (image_tag("add.png")), { :tooltip => 'Create Article' },
-                                                                           :class => 'mytooltip'), new_article_path %>
-    <%= link_to (tooltip "Create an Article", { :tooltip => 'You really should create an article, here' },
-                                                :class => 'mytooltip'), new_article_path %>
+    <div class="column fr"> 
+      <%= link_to new_article_path, title: "Create Article" do %>
+      <%= image_tag("add.png") %>
+      Create an Article
+      <% end %>
     </div>  
-    <div class="column"><h2>All the World's Articles</h2></div>
+    <div class="column home_page_padding"><h2>All the World's Articles</h2></div>
   </div>
 <% end %>
   
@@ -36,10 +37,12 @@
     <td class="article_table"><%= article.name %></td>
     <td class="article_table"><%= truncate(strip_tags(article.content), length: 30) %></td>
     <td class="article_table"><%= article.created_at.strftime('%A, %b. %d %Y') %></td>
-    <td><%= link_to (tooltip (image_tag("zoom.png")), { :tooltip => 'View Article' },
-                                                    :class => 'mytooltip'), article %></td>
-    <td><%= link_to (tooltip (image_tag("page_edit.png")), { :tooltip => 'Edit Article' },
-                                                    :class => 'mytooltip'), edit_article_path(article) %></td>
+    <td><%= link_to article, title: 'View Article' do %>
+    <%= (image_tag("zoom.png")) %>
+    <% end %> </td>
+    <td><%= link_to edit_article_path(article) do %>
+    <%= image_tag("page_edit.png") %>
+    <% end %> </td>
     <td><%= link_to (tooltip (image_tag("delete.png")), { :tooltip => 'Delete Article' },
                                                              :class => 'mytooltip'), article, confirm: 'Are you sure?', method: :delete %></td>
   </tr>

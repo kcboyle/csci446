@@ -12,7 +12,7 @@ p, ol, ul, td {
   line-height: 18px; }
 
 h2 {
-  padding-bottom: 1em;
+  padding-bottom: 10px;
 }
 
 pre {
@@ -32,6 +32,15 @@ a {
 div {
   &.field, &.actions {
     margin-bottom: 10px; } }
+
+ul {
+  list_style_type: none;
+}
+
+li {
+  display: inline-block;
+  width: 20%;
+}
 
 table {
   border-collapse:collapse;
@@ -79,6 +88,10 @@ table {
   text-align: center;
 }
 
+.left_margin {
+  margin-left: 2cm;
+}
+
 .mytooltip {
   cursor: pointer;
   color: black;
@@ -101,9 +114,9 @@ table {
   border-top: 1px solid black;
 }
 
-.padded_to_fit_h1{
+.home_page_padding {
+  padding-bottom: 20px;
 }
-
 
 #error_explanation {
   width: 450px;
