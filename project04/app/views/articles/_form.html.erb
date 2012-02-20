@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+<div class="form_field_formatting"> 
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
@@ -21,9 +22,11 @@
   </div>
   <div class="field">
     <%= f.label :content %><br />
-    <%= f.text_area :content, :cols => 100 %>
+    <%= f.text_area :content %>
   </div>
   <div class="actions">
     <%= f.submit "Create" %>
   </div>
+</div>
+
 <% end %>
