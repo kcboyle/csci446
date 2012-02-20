@@ -4,20 +4,20 @@
 
 <% content_for :nav do %>
   <ul>
-    <li> <%= link_to articles_path, title: "List all Articles" do %>
+    <li class="show_nav_bar"> <%= link_to articles_path, title: "List all Articles" do %>
       <%= image_tag("arrow_left.png") %>
       list all articles
       <% end %></li>
-    <li><%= link_to edit_article_path(@article), title: "Edit Article" do %>
+    <li class="show_nav_bar"><%= link_to edit_article_path(@article), title: "Edit Article" do %>
         <%= image_tag("page_edit.png") %>
         Edit
         <% end %></li>
-    <li><%= link_to @article, confirm: 'Are you sure?', method: :delete,
+    <li class="show_nav_bar"><%= link_to @article, confirm: 'Are you sure?', method: :delete,
                               title: "Delete Article" do %>
         <%= (image_tag("delete.png")) %>
         Delete Article
         <% end %></li>
-   <li><%= mail_to "me@domain.com", image_tag("email.png"), 
+   <li class="show_nav_bar"><%= mail_to "me@domain.com", image_tag("email.png"), 
                                     title: "Email the Creator",
                                     :encode => "javascript", 
                                     :subject => @article.title %>

@@ -3,7 +3,7 @@
 <% end %>
 
 <% content_for :nav do %>
-  <ul><li><%= link_to articles_path, title: "List all Articles" do %>
+  <ul class="show_nav_bar"><li><%= link_to articles_path, title: "List all Articles" do %>
   <%= image_tag("arrow_left.png") %>
       list all articles
   <% end %></ul></li>
@@ -12,4 +12,5 @@
 <h1>Creating a New Article</h1>
 
 <div class="before_content_padding"><%= render 'form' %></div>
+
 
