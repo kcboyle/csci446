@@ -36,7 +36,7 @@ class ArticlesControllerTest < ActionController::TestCase
 
   test "should update article" do
     put :update, id: @article, article: @article.attributes
-    assert_redirected_to article_path(assigns(:article))
+    assert_redirected_to article_path(assigns(:article)) 
   end
 
   test "should destroy article" do
@@ -51,5 +51,4 @@ class ArticlesControllerTest < ActionController::TestCase
     article = Article.new
     assert !article.save, "Saved the post without a title"
   end
-
 end
