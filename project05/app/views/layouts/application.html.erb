@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Articles</title>
+  <%= stylesheet_link_tag    "reset", :media => "all" %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+  <div class="center_align">
+  <% flash.each do |key, msg | %>
+    <% content_tag :div, msg, :id => key %>
+  <% end %>
+
+  <h1>Articl.es</h1>
+    <div class="left_margin"><p><%= yield :subtitle %></p></div>
+  </div>
+  <%= yield :nav %>
+
+<%= yield %>
+
+</body>
+</html>

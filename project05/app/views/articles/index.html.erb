@@ -1,0 +1,56 @@
+<% content_for :subtitle do %>
+  <div class="home_page_subtitle"> ...with a name .com hipsters love</div>
+<% end %>
+
+<% content_for :nav do %>
+  <div>
+    <div class="column fr"> 
+      <%= link_to new_article_path, title: "Create Article" do %>
+      <%= image_tag("add.png") %>
+      Create an Article
+      <% end %>
+    </div>  
+    <div class="column home_page_header_padding"><h2>All the World's Articles</h2></div>
+  </div>
+<% end %>
+  
+<% if notice %>
+<p id="notice">
+<%= notice %></p>
+<% end %>
+
+<div class="scroll_bar">
+<table>
+  <tr class="list_header" >
+    <th class="article_table" >Title</th>
+    <th class="article_table">Author Name</th>
+    <th class="article_table">Body</th>
+    <th class="article_table center_align">Creation Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr class="<%= cycle( 'list_line_odd', 'list_line_even') %> listing_articles" >
+    <td class="article_table"><%= article.title %></td>
+    <td class="article_table"><%= article.name %></td>
+    <td class="article_table"><%= truncate(strip_tags(article.content), length: 30) %></td>
+    <td class="article_table"><%= article.created_at.strftime('%A, %b. %d %Y') %></td>
+    <td><%= link_to article, title: 'View Article' do %>
+    <%= (image_tag("zoom.png")) %>
+    <% end %> </td>
+    <td><%= link_to edit_article_path(article) do %>
+    <%= image_tag("page_edit.png") %>
+    <% end %> </td>
+    <td><%= link_to (tooltip (image_tag("delete.png")), { :tooltip => 'Delete Article' },
+                                                             :class => 'mytooltip'), article, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<p class="home_page_number_articles_padding"><%= pluralize(@articles.count, "article") %></p>
+
+<br />
+

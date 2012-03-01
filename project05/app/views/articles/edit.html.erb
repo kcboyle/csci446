@@ -1,0 +1,16 @@
+<% content_for :subtitle do %>
+  <div> ...my cousin works for Bit.ly</div>
+<% end %>
+
+<% content_for :nav do %>
+  <ul class="show_nav_bar">
+    <li><%= link_to :back, title: "Return to the previous page" do %>
+        <%= image_tag("arrow_left.png") %>
+        back
+        <% end %></ul></li>
+<% end %>
+
+
+<h1>Editing "<%= @article.title %>"</h1>
+
+<div class="before_content_padding"><%= render 'form' %></div>
