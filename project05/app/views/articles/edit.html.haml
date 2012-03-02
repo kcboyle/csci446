@@ -1,0 +1,14 @@
+-content_for :subtitle do
+  = "...my cousin works for Bit.ly"
+
+
+-content_for :nav do
+  %ul{:class => "show_nav_bar"}
+    %li
+    =link_to :back, title: "Return to the previous page" do 
+      =image_tag("arrow_left.png")
+      Back
+
+%h1== Editing #{@article.title}
+
+.before_content_padding= render 'form'

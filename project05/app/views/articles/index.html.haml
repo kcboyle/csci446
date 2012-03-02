@@ -1,0 +1,39 @@
+-content_for :subtitle do 
+  .home_page_subtitle= "...with a name .com hipsters love"
+
+-content_for :nav do
+  .column
+    .fr 
+      =link_to new_article_path, title: "Create Article" do
+        =image_tag("add.png")
+        Create an Article
+  .column
+    .home_page_header_padding
+      %h2 All the World's Articles
+  
+.scroll_bar
+  %table
+    %tr.list_header
+      %th.article_table== Title
+      %th.article_table== Author Name
+      %th.article_table== Body
+      %th.article_table.center_align== Creation Date
+      %th
+      %th
+      %th
+   
+    -@articles.each do |article|
+      %tr{ :class => cycle('list_line_odd', 'list_line_even')} 
+        .listing_articles
+          %td.article_table= article.title
+          %td.article_table= article.name
+          %td.article_table= truncate(strip_tags(article.content), length: 30)
+          %td.article_table= article.created_at.strftime('%A, %b. %d %Y')
+          %td= link_to image_tag("zoom.png"), article, title: 'View Article'
+          %td= link_to image_tag("page_edit.png"), edit_article_path(article), title: 'Edit Article'
+          %td= link_to (tooltip (image_tag("delete.png")), { :tooltip => 'Delete Article' }, :class => 'mytooltip'), article, confirm: 'Are you sure?', method: :delete
+
+  %p.home_page_number_articles_padding= pluralize(@articles.count, "article")
+
+%br
+
