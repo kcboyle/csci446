@@ -1,0 +1,28 @@
+-content_for :subtitle do
+  .general_subtitle= "...what's 'Articl' in Spanish anyway?"
+
+-content_for :nav do
+  %ul
+    %li.show_nav_bar
+      = link_to articles_path, title: "List all Articles" do 
+        =image_tag("arrow_left.png") 
+        list all articles
+    %li.show_nav_bar
+      = link_to edit_article_path(@article), title: "Edit Article" do
+        =image_tag("page_edit.png")
+        Edit
+    %li.show_nav_bar
+      =link_to @article, confirm: 'Are you sure?', method: :delete, title: "Delete Article" do
+        =(image_tag("delete.png"))
+        Delete Article
+    %li.show_nav_bar
+      =mail_to "me@domain.com", image_tag("email.png"), title: "Email the Creator", :encode => "javascript", :subject => @article.title
+      =mail_to "me@domain.com", "Email", title: "Email the Creator", :encode => "javascript", :subject => @article.title
+
+%h2
+  =#{@article.title}
+%p== by #{@article.name}. #{pluralize(@article.count, "edit")} since #{@article.created_at.strftime('%b. %d %Y')}
+
+%p.before_content_padding
+  =sanitize @article.content
+
