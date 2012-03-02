@@ -19,6 +19,9 @@
       =mail_to "me@domain.com", image_tag("email.png"), title: "Email the Creator", :encode => "javascript", :subject => @article.title
       =mail_to "me@domain.com", "Email", title: "Email the Creator", :encode => "javascript", :subject => @article.title
 
+%p{ :id=>notice}
+  =notice
+
 %h2
   =#{@article.title}
 %p== by #{@article.name}. #{pluralize(@article.count, "edit")} since #{@article.created_at.strftime('%b. %d %Y')}
