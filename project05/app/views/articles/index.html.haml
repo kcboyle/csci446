@@ -2,14 +2,12 @@
   .home_page_subtitle= "...with a name .com hipsters love"
 
 -content_for :nav do
-  .column
-    .fr 
-      =link_to new_article_path, title: "Create Article" do
-        =image_tag("add.png")
-        Create an Article
-  .column
-    .home_page_header_padding
-      %h2 All the World's Articles
+  .column.fr 
+    =link_to new_article_path, title: "Create Article" do
+      =image_tag("add.png")
+      Create an Article
+  .column.home_page_header_padding
+    %h2 All the World's Articles
 
 .scroll_bar
   %table
