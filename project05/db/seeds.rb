@@ -1,4 +1,4 @@
-25.times do
+175.times do
   Article.create(:title => 'Lorem Ipsum', 
                  :name => 'Robert Frost', 
                  :content => "<p>Magna readymade duis swag dolor etsy. Laboris consectetur cardigan terry richardson fingerstache, photo booth you probably haven't heard of them single-origin coffee hella excepteur seitan pop-up pickled cupidatat. Ethical mlkshk 3 wolf moon post-ironic sed. DIY banksy cray, fixie consequat laborum nisi nulla. Wayfarers fanny pack vice, odd future readymade vegan fugiat lomo do mumblecore american apparel eu. Blog quis mumblecore, commodo marfa officia ennui. Beard direct trade ethnic accusamus, gastropub voluptate labore master cleanse +1 skateboard ea sapiente.</p><br /> 

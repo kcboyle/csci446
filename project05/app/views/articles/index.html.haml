@@ -13,29 +13,31 @@
   %p{ :id => notice }
   =notice
 
-.scroll_bar
-  %table
-    %tr.list_header
-      %th.article_table== Title
-      %th.article_table== Author Name
-      %th.article_table== Body
-      %th.article_table.center_align== Creation Date
-      %th
-      %th
-      %th
-   
-    -@articles.each do |article|
-      %tr{ :class => cycle('list_line_odd', 'list_line_even')} 
-        .listing_articles
-          %td.article_table= article.title
-          %td.article_table= article.name
-          %td.article_table= truncate(strip_tags(article.content), length: 30)
-          %td.article_table= article.created_at.strftime('%A, %b. %d %Y')
-          %td= link_to image_tag("zoom.png"), article, title: 'View Article'
-          %td= link_to image_tag("page_edit.png"), edit_article_path(article), title: 'Edit Article'
-          %td= link_to (tooltip (image_tag("delete.png")), { :tooltip => 'Delete Article' }, :class => 'mytooltip'), article, confirm: 'Are you sure?', method: :delete
+%p= will_paginate @articles, :class => 'pagination_style'
+
+%table
+  %tr.list_header
+    %th.article_table.table_header== Title
+    %th.article_table.table_header== Author Name
+    %th.article_table.table_header== Body
+    %th.article_table.center_align.table_header== Creation Date
+    %th.image_color
+    %th.image_color
+    %th.image_color
+ 
+  -@articles.each do |article|
+    %tr{ :class => cycle('list_line_odd', 'list_line_even')} 
+      .listing_articles
+        %td.article_table= article.title
+        %td.article_table= article.name
+        %td.article_table= truncate(strip_tags(article.content), length: 30)
+        %td.article_table= article.created_at.strftime('%A, %b. %d %Y')
+        %td.image_color= link_to image_tag("zoom.png"), article, title: 'View Article'
+        %td.image_color= link_to image_tag("page_edit.png"), edit_article_path(article), title: 'Edit Article'
+        %td.image_color= link_to (tooltip (image_tag("delete.png")), { :tooltip => 'Delete Article' }, :class => 'mytooltip'), article, confirm: 'Are you sure?', method: :delete
 
 %p.home_page_number_articles_padding= pluralize(@articles.count, "article")
 
 %br
 
+%p=will_paginate @articles, :class => 'pagination_style'
