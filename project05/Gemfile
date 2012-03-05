@@ -39,4 +39,5 @@ gem 'jquery-rails'
 
 gem "haml"
 gem 'will_paginate'
-gem "paperclip"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'erb2haml'
