@@ -1,0 +1,33 @@
+-content_for :subtitle do 
+  .general_subtitle= "...and he who made the article shall be named"
+
+-content_for :nav do
+  .column.fr 
+    =link_to new_author_path, title: "Create Article" do
+      =image_tag("add.png")
+      New Author
+  .column.home_page_header_padding
+    %h2 Listing authors
+
+-if notice
+  %p{ :id => notice }
+  =notice
+
+
+%table.table_align
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  -@authors.each do |author|
+    %tr
+      %td= author.name
+      %td= link_to image_tag("zoom.png"), author, title: 'View Author'
+      %td= link_to image_tag("page_edit.png"), edit_author_path(author), title: 'Edit Author Details'
+      %td= link_to (tooltip (image_tag("delete.png")), { :tooltip => 'Delete Author' }, :class => 'mytooltip'), author, confirm: 'Are you sure?', method: :delete
+
+%br 
+
+= link_to 'New Author', new_author_path

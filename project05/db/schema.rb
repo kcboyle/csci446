@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120305201132) do
+ActiveRecord::Schema.define(:version => 20120306050758) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -20,12 +20,17 @@ ActiveRecord::Schema.define(:version => 20120305201132) do
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
     t.integer  "count",      :default => 0
+    t.integer  "author_id"
   end
 
   create_table "authors", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
 end

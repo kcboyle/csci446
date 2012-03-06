@@ -1,0 +1,21 @@
+-content_for :subtitle do
+  .general_subtitle= "...When all else is gone, we remain"
+
+%p
+  #notice
+  = notice
+
+%h2
+  = @author.name
+  %p.before_content_padding
+  = image_tag @author.photo.url
+
+%h3.before_content_padding
+  Articles created by #{@author.name}
+  %ul
+    - @author.articles.each do |x|
+      %li.articleLinks= link_to x.title, x, title: "View article"
+%br
+
+= link_to 'Edit', edit_author_path(@author) |
+= link_to 'Back', authors_path

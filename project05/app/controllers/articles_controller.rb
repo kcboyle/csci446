@@ -1,8 +1,10 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
+  before_filter :load_authors, :except => [:index, :destroy]
   def index
     @articles = Article.paginate page: params[:page], per_page: 10
+    @authors= Author.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
@@ -97,6 +99,10 @@ class ArticlesController < ApplicationController
   def redirect_back_or(articles_path)
     redirect_to(session[:return_to] || articles_path)
     clear_return_to
+  end
+private
+  def load_authors
+    Author.all
   end
 
 end
