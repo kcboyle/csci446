@@ -13,7 +13,7 @@
     %li.form_field_text=f.text_field :title 
     %br
     %li.form_field_formatting=f.label :name
-    %li.form_field_text=f.select :name, Author.all.collect {|t| [t.name, t.id] }, {:prompt => "--select an author--"} 
+    %li.form_field_text=f.select :author_id, Author.all.collect {|t| [t.name, t.id] }, {:prompt => "--select an author--"} 
     %br
     %li.form_field_formatting.form_field_content_margin
       =f.label :content

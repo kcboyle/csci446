@@ -1,10 +1,10 @@
 class Author < ActiveRecord::Base
   belongs_to :category
+  has_many :articles, dependent: :destroy
 
   has_attached_file :photo,
                     :url => "/assets/authors/:id/:style/:basename.:extension",
                     :path => ":rails_root/public/assets/authors/:id/:style/:basename.:extension"
-  has_many :articles
 
   validates :name, :presence => true
   validates :name, :format => { :with => %r{^((?!pat).*$)}i, :message => "cannot contain the name pat"}

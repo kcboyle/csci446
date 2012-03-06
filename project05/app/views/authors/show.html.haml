@@ -1,5 +1,5 @@
 -content_for :subtitle do
-  .general_subtitle= "...When all else is gone, we remain"
+  .general_subtitle= "...he who shall be named"
 
 %p
   #notice
@@ -12,9 +12,8 @@
 
 %h3.before_content_padding
   Articles created by #{@author.name}
-  %ul
-    - @author.articles.each do |x|
-      %li.articleLinks= link_to x.title, x, title: "View article"
+- @author.articles.each do |p|
+  %li= link_to p.title, p, title: "View article"
 %br
 
 = link_to 'Edit', edit_author_path(@author) |

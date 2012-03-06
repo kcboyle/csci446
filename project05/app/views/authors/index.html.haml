@@ -2,12 +2,18 @@
   .general_subtitle= "...and he who made the article shall be named"
 
 -content_for :nav do
-  .column.fr 
-    =link_to new_author_path, title: "Create Article" do
-      =image_tag("add.png")
-      New Author
-  .column.home_page_header_padding
-    %h2 Listing authors
+  %table.home_page_header_padding
+    %tr
+      %td
+        %h2 Listing Authors
+      %td
+        =link_to new_author_path, title: "Create an Author" do
+          =image_tag("add.png")
+          New Author
+      %td
+        =link_to articles_path, title: "List All Articles" do
+          =image_tag("rosette.png")
+          All Articles
 
 -if notice
   %p{ :id => notice }

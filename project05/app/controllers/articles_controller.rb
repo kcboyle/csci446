@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   before_filter :load_authors, :except => [:index, :destroy]
   def index
     @articles = Article.paginate page: params[:page], per_page: 10
-    @authors= Author.all
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }

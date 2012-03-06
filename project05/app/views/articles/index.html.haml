@@ -2,14 +2,18 @@
   .home_page_subtitle= "...with a name .com hipsters love"
 
 -content_for :nav do
-  .column.fr 
-    =link_to new_article_path, title: "Create Article" do
-      =image_tag("add.png")
-      Create an Article
-    =link_to authors_path, title: "All Article Authors" do
-      List Authors
-  .column.home_page_header_padding
-    %h2 All the World's Articles
+  %table.home_page_header_padding
+    %tr
+      %td
+        %h2 All the World's Articles
+      %td 
+        =link_to new_article_path, title: "Create Article" do
+          =image_tag("add.png")
+          Create an Article
+      %td
+        =link_to authors_path, title: "All Article Authors" do
+          =image_tag("rosette.png")
+          List Authors
 
 -if notice
   %p{ :id => notice }
@@ -31,7 +35,7 @@
     %tr{ :class => cycle('list_line_odd', 'list_line_even')} 
       .listing_articles
         %td.article_table= article.title
-        %td.article_table= article.name
+        %td.article_table= Author.find(article.author_id).name
         %td.article_table= truncate(strip_tags(article.content), length: 30)
         %td.article_table= article.created_at.strftime('%A, %b. %d %Y')
         %td.image_color= link_to image_tag("zoom.png"), article, title: 'View Article'
