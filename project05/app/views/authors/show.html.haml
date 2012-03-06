@@ -1,6 +1,20 @@
 -content_for :subtitle do
   .general_subtitle= "...he who shall be named"
 
+-content_for :nav do
+  %ul
+    %li.show_nav_bar
+      = link_to authors_path, title: "list all authors" do 
+        =image_tag("arrow_left.png") 
+        list all authors
+    %li.show_nav_bar
+      = link_to edit_author_path(@author), title: "Edit Author" do
+        =image_tag("page_edit.png")
+        Edit
+    %li.show_nav_bar
+      =link_to @author, confirm: 'Are you sure?', method: :delete, title: "Delete Author" do
+        =(image_tag("delete.png"))
+        Delete Author
 %p
   #notice
   = notice
@@ -16,5 +30,3 @@
   %li= link_to p.title, p, title: "View article"
 %br
 
-= link_to 'Edit', edit_author_path(@author) |
-= link_to 'Back', authors_path

@@ -1,5 +1,13 @@
-%h1 New author
+-content_for :subtitle do
+  .general_subtitle= "...Welcome to the Jungle"
+
+-content_for :nav do
+  %ul.show_nav_bar
+    %li
+      = link_to authors_path, title: "List all Authors" do 
+        = image_tag("arrow_left.png") 
+        list all authors
+
+%h1 Creating a New Author
 
 = render 'form'
-
-= link_to 'Back', authors_path
