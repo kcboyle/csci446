@@ -1,6 +1,16 @@
-%h1 Editing author
+-content_for :subtitle do
+  .general_subtitle
+    = "...The new dawn is near"
 
-=render 'form'
+-content_for :nav do
+  %ul{:class => "show_nav_bar"}
+    %li
+      =link_to :back, title: "Return to the previous page" do 
+        =image_tag("arrow_left.png")
+        Back
 
-=link_to 'Show', @author
-=link_to 'Back', authors_path 
+%h1== Editing #{@author.name}
+
+.before_content_padding
+  =render 'form'
+
