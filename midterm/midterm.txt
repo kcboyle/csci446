@@ -1,2 +1,139 @@
-1) What is the difference between an HTTP PUT request and a POST request?
+1)[What is the difference between an HTTP PUT request and a POST request?]
+	*an HTTP PUT request puts a file at a specific URI. if there is already
+		a file at that URI (Uniform Resource Indicator, PUT replaces it (or 
+		creates it if there is none)
+	*an HTTP POST sends data to a specific URI and expects the resource there 
+		to handle the request. The web server can then choose what to do with the
+		data
+	*(POST identifies the resource that will handle the entity, PUT identifies the
+		entity)
+
+2)[Is the target URL relative or absolute?]
+	*The target URL is a relative url. 
 	
+3)[What is the difference between an absolute and relative URL?]
+	*An absolute URL is "not dependent on anything else" therefore, not dependent on 
+		any relationship. When it is used, it points directly to a file (specifying 
+		the EXACT location of the file on the internet (if 2 are identical, they are the
+		same file.)
+	*A relative URL, however, points to a file/directory in relation to the present file/dir
+	
+4) [If you clicked on this link, what kind of request would your browser generate? (which HTTP method?) 
+Assume no JavaScript modifies the behavior of the link.]
+	*The browser would generate a POST request. 
+	
+5)[Is there a querystring? What is it?]
+	*Yes thre is a querystring. It is "request_type=PUT"
+	
+6)[What is lacking from the link declaration that would otherwise enhance accessibility?]
+	*The use of some sort of tooltip or alternative text would ehance accessibility
+	
+7)[What are the roles of the database and Web browser in most Web applications? (One sentence for each.)]
+	*Databases can be used to search, sort, filter, and present information based on web requests from 
+		users. They can be used also to perform calculations on the data to support queries submitted 
+		from web browsers
+	*The Web browser is the appication software that resides on a personal computer. interprets and displays
+		the html code sent from the web server. 
+		
+8)[Would an HTTP response that begins like that usually contain a body? Why or why not?]
+	*No it would not contain a body. HTTP/1.1 applications do not support persistent (keep-alive) 
+		connections. 
+		
+9)[Write a Ruby class definition ]
+	*class Troll
+		@ugliness
+		@smelliness
+		@strength
+		
+		def initialize(grunt="UNGAH")
+			@grunt = grunt
+		end
+		
+		def speak
+			42.times do
+				puts @grunt
+			end
+		end
+		
+		def reverse
+			puts @grunt.reverse
+		end
+		
+		def self.propogate
+			@grunt = "eegah"
+		end
+	end
+	
+10)[What is missing from your class definition in order for {this} example to be accurate?]
+	*The example is missing a class method called "fight" in order to return true
+
+11)[Does the respond_to?() method illustrate object-oriented polymorphism? If so, in what manner?]
+	*It doesn't necessarily 'illustrate' polymorphism. The method itself, however, could be called
+		by something that is not a Troll if it has the same parameters that a Troll does. 
+		(if it grunts like a troll, has strength like a troll, it is a troll (depending on what fight uses))
+
+12)[According to Ruby conventions, what kind of value would you expect to receive from a method that ends in a question mark (?) ?]
+	*The question mark returns a boolean value
+	
+13)[According to Ruby conventions, what is the difference between pairs of methods like do_this and do_this! (notice the bang) ?]
+	*do_this! (with the bang) will modify the object it is called on, while do_this would not modify the object
+	
+14)[Briefly explain Ruby's type system. What is it (by name)? What does it mean?]
+	*Ruby has a dynamic type system (most type checking is done at run-time rather than compile-time) that is known for being 
+		extremely flexible. It has a lack of type compile-time type-checking, allows for very concise expressions, and a lot of flexibility. To 
+		make up for the lack of checking, ruby relies on tests to take the place of it at run-time.
+
+15) [What type of Ruby object does the following expression yield? %w]
+	*%w is the notation for writing an array of strings without commas or quotations but with spaces to separate them
+	
+16)[Given an array of strings called @happy_places, would these two snippets of code do the same thing?]
+	*assuming that hp and happy_place were the same, then yes, the two snippets of code woule do the same thing
+
+17)[Given a function that needs to return a value to its caller, does the function need an explicit return statement? If so, explain why.]
+   [If not, then what can you always expect a Ruby function to return?]
+	*The function does not need a return statement. Ruby will return the value of the last statement
+
+18)[Name four ActiveRecord callbacks that you can bind methods to.]
+	*validate
+	*create
+	*before_validation
+	*after_create
+19)[Complete the following table]
+create read update delete
+	HTTP method		controller action	CRUD operation
+		GET				index				Read
+		GET				new					Read
+		POST			create				Create
+		GET				edit				Read
+		PUT				update				Update
+		DELETE			destroy				Delete
+
+20)[Rails "simulates" PUT and DELETE requests. Why?]
+	*Some browsers cannot make PUT or DELETE requests. If the browser does not support these, the coder can send an 
+		extra parameter named _method with the value PUT or DELETE to simulate it. 
+		
+21)[What is the difference between the two Rails environments 'production' and 'development' ?]
+	*The default development environment does not have the cache. It will automatically reload the application source files when a new request 
+		comes along. When the application is edited, the dispatcher makes sure it's running the most recent changes. However, in production mode,
+		there is a short pause after a URL is entered before the application responds. In production, the automatic reload is disabled to eliminate
+		this pause.
+	
+22)[ In what case should a controller have a singular name like GeocodingController?]
+	*Singular namescan be used if there is only one record/id that is being referenced. 
+		because the code might want to use the same controller for a singular rout and a plural route, singular resources map to plural controllers,
+		however, it is mostly a naming convention. 
+		
+23)[What is a Rails "helper method" and when should they be defined and used by you, the developer?]
+	*Helper methods are snippets of code that can be called in the views to help keep the code DRY. They should be used by developers when the developer 
+		has any length of code that they are repeating regularly in the view. 
+		
+24)[What must exist in the database schema in order for AR to infer the proper foreign key / relationship?]
+	*A foreign key is a field in a relational table that matches the primary key column of another table (used for cross reference). The foreign key 
+		identifies a column in a referencing table that refers to a column in another table. You can define a foreign key in the creation of a table,
+		or add the foreign key restrains to an existing table. In short, you must mark which column will be marked as a foreign key
+		
+25)[Are all of those queries ok? If so, explain why. If not, explain how you would reduce the number of database queries]
+	*It depends on the number of queries the database is making on the page. As it says tons are being made, it is not okay for all of the queries to 
+		be made (as the page will be slower). You can use something such as wordpress to help reduce the number of queries and improve performance. You 	
+		could also perhaps create a list of flowers, and then have a separate page for each flower that would list the bees and hive for that flower rather
+    than have them all on the same page
