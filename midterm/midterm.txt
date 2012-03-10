@@ -60,7 +60,7 @@ Assume no JavaScript modifies the behavior of the link.]
 		end
 		
 		def self.propogate
-			@grunt = "eegah"
+			Troll.grunt = "eegah"
 		end
 	end
 	
