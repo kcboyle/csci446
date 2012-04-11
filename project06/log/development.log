@@ -4184,3 +4184,123 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 Served asset /jquery_ujs.js - 304 Not Modified (4ms)
 Served asset /games.js - 304 Not Modified (10ms)
 Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 15:48:47 -0600
+
+SyntaxError (/home/kira/cs446/src/project06/app/models/user.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  belongs_to :role  has_many :games, :dependent => :destroy
+                            ^
+/home/kira/cs446/src/project06/app/models/user.rb:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+  belongs_to :role  has_many :games, :dependent => :destroy
+                                                  ^):
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 15:49:10 -0600
+
+SyntaxError (/home/kira/cs446/src/project06/app/models/user.rb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  belongs_to :role  has_many :games, :dependent => :destroy
+                            ^
+/home/kira/cs446/src/project06/app/models/user.rb:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+  belongs_to :role  has_many :games, :dependent => :destroy
+                                                  ^):
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.haml within layouts/application (92.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 187ms (Views: 140.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /games.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /games.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:38 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 15:49:41 -0600
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.6ms)[0m  [1mSELECT "games".* FROM "games" [0m
+  Rendered games/index.html.haml within layouts/application (8.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 47ms (Views: 38.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /games.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 15:49:42 -0600
+Served asset /users.js - 304 Not Modified (0ms)
