@@ -10,12 +10,12 @@
 
   .field
     = f.label :name
-    = f.text_field :name, size: 40
+    = f.text_field :name
   .field
     = f.label :password, 'Password'
-    = f.password_field :password, size: 40
+    = f.password_field :password
   .field
     = f.label :password_confirmation, 'Confirm'
-    = f.password_field :password_confirmation, size: 40
+    = f.password_field :password_confirmation
   .actions
     = f.submit 'Save'

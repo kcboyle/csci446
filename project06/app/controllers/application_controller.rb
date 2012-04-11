@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  filter_parameter_logging :password
+#  filter_parameter_logging :password
 
   helper_method :current_user
 
@@ -13,5 +13,6 @@ class ApplicationController < ActionController::Base
   def current_user
       return @current_user if defined?(@current_user)
       @current_user = current_user_session && current_user_session.record
+  end
   protect_from_forgery
 end

@@ -25,16 +25,11 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user }
-    end
   end
 
   # GET /users/1/edit
   def edit
-    @user = current_user
+    @user = User.find(params[:id])
   end
 
   # POST /users
@@ -44,7 +39,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:notice] = "Registration successful"
-      redirect_to users_url
+      redirect_to root_url
     else 
       render :action => 'new'
     end
@@ -53,7 +48,7 @@ class UsersController < ApplicationController
   # PUT /users/1
   # PUT /users/1.json
   def update
-    @user = current_user
+    @user = User.find(params[:id])
 
     if @user.update_attributes(params[:user])
       flash[:notice] = "Successfully updated profile."

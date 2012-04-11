@@ -1742,3 +1742,1014 @@ SyntaxError (/home/kira/cs446/src/project06/app/controllers/application_controll
   Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.6ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 20:58:43 -0600
+
+SyntaxError (/home/kira/cs446/src/project06/app/controllers/application_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 20:59:11 -0600
+
+ActionController::RoutingError (undefined method `filter_parameter_logging' for ApplicationController:Class):
+  app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGames (20120410193741)
+Migrating to CreateUsers (20120410232409)
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("games")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 21:17:14 -0600
+
+ActionController::RoutingError (undefined method `filter_parameter_logging' for ApplicationController:Class):
+  app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 21:17:42 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  Rendered users/index.html.haml within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (undefined method `show_title?' for #<#<Class:0x000000035b2108>:0x000000046982d8>):
+    16:       <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    17:     <%- end -%>
+    18: 
+    19:     <%- if show_title? -%>
+    20:       <h1><%=h yield(:title) %></h1>
+    21:     <%- end  -%>
+    22: 
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__3405152456802260988_35286660'
+  app/controllers/users_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+  Rendered users/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /games.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /games.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:25 -0600
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (27.5ms)
+  Rendered users/new.html.haml within layouts/application (37.6ms)
+Completed 200 OK in 71ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 21:18:29 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:18:32 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 5ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, password, password_confirmation):
+  app/controllers/users_controller.rb:43:in `new'
+  app/controllers/users_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (46.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (34.7ms)
+  Rendered users/new.html.haml within layouts/application (50.1ms)
+Completed 200 OK in 184ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+Served asset /users.css - 304 Not Modified (12ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+Served asset /users.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 21:20:52 -0600
+Served asset /games.css - 304 Not Modified (12ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:20:59 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"Kira", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 5ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, password, password_confirmation):
+  app/controllers/users_controller.rb:43:in `new'
+  app/controllers/users_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (53.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:24:16 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"Kira", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, password, password_confirmation):
+  app/controllers/users_controller.rb:38:in `new'
+  app/controllers/users_controller.rb:38:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:26:46 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"Kira", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name):
+  app/controllers/users_controller.rb:38:in `new'
+  app/controllers/users_controller.rb:38:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:27:05 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"Kira", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 309ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000004a46c40>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  Rendered users/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Served asset /scaffolds.css - 304 Not Modified (17ms)
+Served asset /games.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:42 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (10.4ms)
+  Rendered users/new.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 50ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+Served asset /games.css - 304 Not Modified (23ms)
+Served asset /games.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 21:27:44 -0600
+Served asset /users.css - 304 Not Modified (9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:27:46 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 28ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003a94a68>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:48:27 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 27ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003b5e1b0>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGames (20120410193741)
+Migrating to CreateUsers (20120410232409)
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("games")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:50:56 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 26ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003b45228>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:52:08 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 5ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003c096f0>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGames (20120410193741)
+Migrating to CreateUsers (20120410232409)
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("games")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:52:33 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 23ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003f46bd8>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGames (20120410193741)
+Migrating to CreateUsers (20120410232409)
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("games")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:53:48 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 22ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003352390>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:54:27 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 25ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003f22530>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:54:39 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 24ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000002b3c5e8>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:57:34 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 5ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003fee2c0>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  Rendered users/index.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 74ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Served asset /games.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Served asset /games.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:39 -0600
+Served asset /jquery.js - 304 Not Modified (66ms)
+Served asset /scaffolds.css - 304 Not Modified (9ms)
+Served asset /users.js - 304 Not Modified (9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (18.3ms)
+  Rendered users/new.html.haml within layouts/application (73.7ms)
+Completed 200 OK in 155ms (Views: 133.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+Served asset /games.css - 304 Not Modified (3ms)
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+Served asset /games.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 21:57:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 21:57:43 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 29ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003477f90>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:02:38 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x0000000304f378>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGames (20120410193741)
+Migrating to CreateUsers (20120410232409)
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("games")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGames (20120410193741)
+Migrating to CreateUsers (20120410232409)
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("games")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:18:28 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 30ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x0000000384c1e8>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:25:07 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 24ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000003fe9360>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:29:17 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, password, password_confirmation):
+  app/controllers/users_controller.rb:38:in `new'
+  app/controllers/users_controller.rb:38:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:29:30 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 19ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: password):
+  app/controllers/users_controller.rb:38:in `new'
+  app/controllers/users_controller.rb:38:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGames (20120410193741)
+Migrating to CreateUsers (20120410232409)
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("games")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:40:42 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 23ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: password):
+  app/controllers/users_controller.rb:38:in `new'
+  app/controllers/users_controller.rb:38:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (53.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (76.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:44:00 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: password):
+  app/controllers/users_controller.rb:38:in `new'
+  app/controllers/users_controller.rb:38:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-10 22:44:06 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  Rendered users/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 78ms (Views: 74.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:06 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:06 -0600
+Served asset /games.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:06 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:06 -0600
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:07 -0600
+Served asset /games.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:07 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:07 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:07 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:07 -0600
+Served asset /application.js - 304 Not Modified (50ms)
+Served asset /jquery.js - 304 Not Modified (16ms)
+Served asset /scaffolds.css - 304 Not Modified (34ms)
+Served asset /users.js - 304 Not Modified (15ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-10 22:44:09 -0600
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (41.5ms)
+Completed 500 Internal Server Error in 157ms
+
+ActionView::Template::Error (Missing partial users/user with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/home/kira/cs446/src/project06/app/views"
+  * "/var/lib/gems/1.9.1/gems/declarative_authorization-0.5.5/app/views"
+):
+    1: %h1 New user
+    2: 
+    3: = render @user
+    4: = render 'form'
+    5: 
+    6: = link_to 'Back', users_path
+  app/views/users/new.html.haml:3:in `_app_views_users_new_html_haml___1453397286267806726_39440060'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (39.0ms)
+  Rendered users/new.html.haml within layouts/application (44.6ms)
+Completed 200 OK in 96ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+Served asset /users.css - 304 Not Modified (7ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+Served asset /games.css - 304 Not Modified (6ms)
+Served asset /jquery.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+Served asset /games.js - 304 Not Modified (8ms)
+Served asset /application.js - 304 Not Modified (59ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:17 -0600
+Served asset /scaffolds.css - 304 Not Modified (15ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-10 22:44:25 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (91.9ms)
+  Rendered users/new.html.haml within layouts/application (128.0ms)
+Completed 200 OK in 293ms (Views: 266.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-10 22:44:26 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:45:50 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 24ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: password):
+  app/controllers/users_controller.rb:38:in `new'
+  app/controllers/users_controller.rb:38:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:46:34 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 26ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000005357b90>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 22:46:51 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 23ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x0000000459f980>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 23:18:26 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 32ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x000000052a55f8>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (11.6ms)[0m  [1mCREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (14.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (13.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (9.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (12.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120410232409')[0m
+  [1m[35m (8.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120410193741')
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-10 23:21:13 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6EsRRYT6sXNfFM9gQtI1qUmWh4AX/WQ1SpeVcgQ+sqY=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 24ms
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x00000004c03588>):
+  app/controllers/users_controller.rb:40:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (29.2ms)[0m  [1mCREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (7.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (15.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (8.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (13.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120410232409')[0m
+  [1m[35m (11.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120410193741')
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (12.3ms)[0m  [1mCREATE TABLE "games" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (9.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (8.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120410232409')[0m
+  [1m[35m (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120410193741')
