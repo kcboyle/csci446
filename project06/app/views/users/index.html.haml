@@ -1,23 +1,23 @@
 %h1 Listing users
-
--if notice
-  %p{ :id => notice }
-  =notice
-
 %table
   %tr
-    %th Name
+    %th Username
+    %th Email
+    %th Password
+    %th First name
+    %th Last name
     %th
     %th
     %th
-
   - @users.each do |user|
     %tr
-      %td= user.name
+      %td= user.username
+      %td= user.email
+      %td= user.password
+      %td= user.first_name
+      %td= user.last_name
       %td= link_to 'Show', user
       %td= link_to 'Edit', edit_user_path(user)
-      %td= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
+      %td= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete
+%br/
 = link_to 'New User', new_user_path

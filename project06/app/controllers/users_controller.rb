@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.order(:name)
+    @users = User.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,6 +25,11 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @user }
+    end
   end
 
   # GET /users/1/edit
@@ -37,11 +42,14 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
 
-    if @user.save
-      flash[:notice] = "Registration successful"
-      redirect_to root_url
-    else 
-      render :action => 'new'
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to root_url, notice: 'Registration successful.' }
+        format.json { render json: @user, status: :created, location: @user }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -50,11 +58,14 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
 
-    if @user.update_attributes(params[:user])
-      flash[:notice] = "Successfully updated profile."
-      redirect_to users_url
-    else
-      render :action => 'edit'
+    respond_to do |format|
+      if @user.update_attributes(params[:user])
+        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
     end
   end
 
