@@ -1,49 +1,27 @@
 require 'test_helper'
 
 class UserSessionsControllerTest < ActionController::TestCase
-  setup do
-    @user_session = user_sessions(:one)
-  end
-
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:user_sessions)
-  end
-
-  test "should get new" do
+  def test_new
     get :new
-    assert_response :success
+    assert_template 'new'
   end
 
-  test "should create user_session" do
-    assert_difference('UserSession.count') do
-      post :create, user_session: {  }
-    end
-
-    assert_redirected_to user_session_path(assigns(:user_session))
+  def test_create_invalid
+    UserSession.any_instance.stubs(:valid?).returns(false)
+    post :create
+    assert_template 'new'
   end
 
-  test "should show user_session" do
-    get :show, id: @user_session
-    assert_response :success
+  def test_create_valid
+    UserSession.any_instance.stubs(:valid?).returns(true)
+    post :create
+    assert_redirected_to root_url
   end
 
-  test "should get edit" do
-    get :edit, id: @user_session
-    assert_response :success
-  end
-
-  test "should update user_session" do
-    put :update, id: @user_session, user_session: {  }
-    assert_redirected_to user_session_path(assigns(:user_session))
-  end
-
-  test "should destroy user_session" do
-    assert_difference('UserSession.count', -1) do
-      delete :destroy, id: @user_session
-    end
-
-    assert_redirected_to user_sessions_path
+  def test_destroy
+    user_session = UserSession.first
+    delete :destroy, :id => user_session
+    assert_redirected_to root_url
+    assert !UserSession.exists?(user_session.id)
   end
 end
