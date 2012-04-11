@@ -5029,3 +5029,486 @@ Served asset /users.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 16:24:44 -0600
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 16:27:33 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (private method `current_user' called for #<UsersController:0x00000004838728>):
+  app/controllers/application_controller.rb:7:in `block in <class:ApplicationController>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 16:27:56 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (private method `current_user' called for #<UsersController:0x0000000485b340>):
+  app/controllers/application_controller.rb:20:in `block in <class:ApplicationController>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 16:29:07 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (private method `current_user' called for #<UsersController:0x00000004679d10>):
+  app/controllers/application_controller.rb:20:in `block in <class:ApplicationController>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 16:29:10 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (private method `current_user' called for #<UsersController:0x000000048e8d80>):
+  app/controllers/application_controller.rb:20:in `block in <class:ApplicationController>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 16:30:07 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.haml within layouts/application (26.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 167ms (Views: 119.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+Served asset /users.css - 304 Not Modified (4ms)
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+Served asset /users.js - 304 Not Modified (5ms)
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 16:30:08 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 16:38:38 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.haml within layouts/application (14.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 100ms (Views: 55.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+Served asset /games.css - 304 Not Modified (9ms)
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+Served asset /application.js - 304 Not Modified (45ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 16:38:39 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 16:39:50 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.haml within layouts/application (13.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 101ms (Views: 53.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /games.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 16:39:51 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+Served asset /jquery.js - 304 Not Modified (114ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 16:39:52 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:39:56 -0600
+
+ActionController::RoutingError (undefined local variable or method `filter_resource_acess' for GamesController:Class):
+  app/controllers/games_controller.rb:2:in `<class:GamesController>'
+  app/controllers/games_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.3ms)[0m  [1mSELECT "games".* FROM "games" [0m
+  Rendered games/index.html.haml within layouts/application (20.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 315ms (Views: 275.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+Served asset /application.css - 304 Not Modified (17ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 16:40:07 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /games.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 16:40:08 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 16:40:08 -0600
+Served asset /scaffolds.css - 304 Not Modified (17ms)
+Served asset /application.js - 304 Not Modified (53ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:44:31 -0600
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (private method `current_user' called for #<GamesController:0x000000048ab0c0>):
+  app/controllers/application_controller.rb:19:in `block in <class:ApplicationController>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:44:54 -0600
+Processing by GamesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 211ms
+
+NameError (undefined local variable or method `roles' for #<User:0x00000004ccc2a8>):
+  app/models/user.rb:10:in `role_symbols'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:46:13 -0600
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/home/kira/cs446/src/project06/app/models/user.rb:13: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/application_controller.rb:9:in `current_user_session'
+  app/controllers/application_controller.rb:14:in `current_user'
+  app/controllers/application_controller.rb:17:in `block in <class:ApplicationController>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:46:30 -0600
+Processing by GamesController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 500 Internal Server Error in 230ms
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/models/user.rb:10:in `role_symbols'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:47:37 -0600
+Processing by GamesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 109ms
+
+NameError (undefined local variable or method `users' for #<User:0x0000000514c508>):
+  app/models/user.rb:10:in `role_symbols'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:47:40 -0600
+Processing by GamesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `users' for #<User:0x0000000587fe10>):
+  app/models/user.rb:10:in `role_symbols'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (74.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (94.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:47:48 -0600
+Processing by GamesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 95ms
+
+NameError (undefined local variable or method `user' for #<User:0x000000048a3820>):
+  app/models/user.rb:10:in `role_symbols'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 16:48:00 -0600
+Processing by GamesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 500 Internal Server Error in 101ms
+
+NameError (undefined local variable or method `name' for #<User:0x00000004709690>):
+  app/models/user.rb:10:in `role_symbols'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 17:22:48 -0600
+Processing by GamesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games" 
+  Rendered games/index.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 299ms (Views: 64.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /games.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /games.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:49 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/games/1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mGame Load (0.8ms)[0m  SELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered games/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 40ms (Views: 28.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:51 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2012-04-11 17:22:52 -0600
+Processing by GamesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mGame Load (0.3ms)[0m  SELECT "games".* FROM "games" 
+  Rendered games/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 107ms (Views: 97.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 17:22:53 -0600
+Served asset /games.js - 304 Not Modified (0ms)
