@@ -3816,3 +3816,371 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 12:44:36 
 Served asset /games.js - 304 Not Modified (4ms)
 Served asset /jquery.js - 304 Not Modified (3ms)
 Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 14:12:15 -0600
+
+NoMethodError (undefined method `resources' for nil:NilClass):
+  config/routes.rb:14:in `block (2 levels) in <top (required)>'
+  config/routes.rb:13:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 14:15:45 -0600
+
+RuntimeError (You are using the old router DSL which has been removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/):
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 14:16:54 -0600
+
+SyntaxError (/home/kira/cs446/src/project06/config/routes.rb:19: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.3) lib/active_support/dependencies.rb:245:in `load'
+  activesupport (3.2.3) lib/active_support/dependencies.rb:245:in `block in load'
+  activesupport (3.2.3) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.3) lib/active_support/dependencies.rb:245:in `load'
+  railties (3.2.3) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (3.2.3) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (3.2.3) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (3.2.3) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (3.2.3) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (3.2.3) lib/active_support/file_update_checker.rb:78:in `call'
+  activesupport (3.2.3) lib/active_support/file_update_checker.rb:78:in `execute'
+  activesupport (3.2.3) lib/active_support/file_update_checker.rb:86:in `execute_if_updated'
+  railties (3.2.3) lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+  railties (3.2.3) lib/rails/application/finisher.rb:68:in `block (2 levels) in <module:Finisher>'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:451:in `_run__3097335242213141556__prepare__1942228879649075042__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  railties (3.2.3) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.11) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.11) lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  passenger (3.0.11) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.11) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.11) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.11) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 14:17:05 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.haml within layouts/application (14.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 96ms (Views: 53.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:06 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Processing by UserSessionsController#destroy as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://kira.com/
+Completed 302 Found in 194ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Processing by GamesController#index as HTML
+  [1m[35mGame Load (0.3ms)[0m  SELECT "games".* FROM "games" 
+  Rendered games/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 169ms (Views: 161.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Served asset /application.css - 304 Not Modified (19ms)
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:23 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-04-11 14:17:25 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.haml within layouts/application (94.4ms)
+Completed 200 OK in 390ms (Views: 268.0ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+Served asset /games.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+Served asset /users.js - 304 Not Modified (4ms)
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:26 -0600
+Served asset /games.css - 304 Not Modified (14ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ue4g+G9Uvk0/WxGpl2vqbN2D5ZZ9VgMkmhzbAQnwnkY=", "user_session"=>{"username"=>"kicombs", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users".username LIKE 'kicombs') LIMIT 1[0m
+Redirected to http://kira.com/
+Completed 302 Found in 191ms (ActiveRecord: 61.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Processing by GamesController#index as HTML
+  [1m[35mGame Load (0.3ms)[0m  SELECT "games".* FROM "games" 
+  Rendered games/index.html.haml within layouts/application (13.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 251ms (Views: 243.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (15ms)
+Served asset /games.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:33 -0600
+Served asset /games.css - 304 Not Modified (14ms)
+
+
+Started GET "/users/current/edit" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"current"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered users/_form.html.haml (35.2ms)
+  Rendered users/edit.html.haml within layouts/application (52.5ms)
+Completed 200 OK in 311ms (Views: 183.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+Served asset /games.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:36 -0600
+Served asset /application.css - 304 Not Modified (14ms)
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:37 -0600
+Served asset /games.css - 304 Not Modified (12ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.haml within layouts/application (30.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 307ms (Views: 202.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /games.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-11 14:17:39 -0600
+Served asset /users.js - 304 Not Modified (3ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+Served asset /games.js - 304 Not Modified (10ms)
+Served asset /application.js - 304 Not Modified (19ms)

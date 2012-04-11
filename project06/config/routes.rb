@@ -10,5 +10,11 @@ Gamez::Application.routes.draw do
     get 'logout' => :destroy
   end
 
+  namespace :admin do 
+    resources :roles
+    resources :users
+    root :controller => 'admin', :action => 'index'
+  end
+
   root :to => 'games#index'
 end
