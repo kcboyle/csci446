@@ -3,6 +3,7 @@ class GamesController < ApplicationController
   # GET /games.json
 
   def index
+    @games_count = Game.count
     @games = Game.all
 
     respond_to do |format|
@@ -35,14 +36,14 @@ class GamesController < ApplicationController
 
   # GET /games/1/edit
   def edit
-    
+    @game = Game.find(params[:id]) 
   end
 
   # POST /games
   # POST /games.json
   def create
     @game = Game.new(params[:game])
-    @game.user_id = current_user.id
+   
 
     respond_to do |format|
       if @game.save
