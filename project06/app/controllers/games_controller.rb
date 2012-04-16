@@ -4,7 +4,7 @@ class GamesController < ApplicationController
 
   def index
     @games_count = Game.count
-    @games = Game.all
+    @games = Game.search(params[:search], params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
