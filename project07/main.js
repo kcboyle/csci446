@@ -1,4 +1,5 @@
 var guessesLeft = 10;
+var numberHighScores = 5;
 var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "NearlyDied"]);
 
 $(function() {
