@@ -5,6 +5,7 @@ var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "Near
 $(function() {
   updateScore(guessesLeft);
   populateHighScores(highScores);
+  decrementGuessesLeft();
 });
 
 function populateHighScores(scores) {
@@ -15,4 +16,8 @@ function populateHighScores(scores) {
 
 function updateScore(score) {
   $('h2#score span#guessesLeft').append(score);
+}
+
+function decrementGuessesLeft() {
+  --guessesLeft;
 }
