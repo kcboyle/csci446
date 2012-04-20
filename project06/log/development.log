@@ -12684,3 +12684,385 @@ Served asset /users.js - 304 Not Modified (0ms)
 Started GET "/assets/users_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:09:35 -0600
 Served asset /application.js - 304 Not Modified (1ms)
 Served asset /users_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Processing by UserSessionsController#destroy as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Redirected to http://kira.com/
+Completed 302 Found in 20ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Processing by GamesController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "games" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "games" [0m
+  [1m[35mGame Load (0.5ms)[0m  SELECT "games".* FROM "games" LIMIT 5 OFFSET 0
+  Rendered games/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 56ms (Views: 49.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /admin.css - 304 Not Modified (0ms)
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /roles_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/roles_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /admin.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /roles_controller.js - 304 Not Modified (0ms)
+Served asset /games.js - 304 Not Modified (0ms)
+Served asset /users_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/users_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:39 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /users_controller.js - 304 Not Modified (1ms)
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.haml within layouts/application (117.2ms)
+Completed 200 OK in 151ms (Views: 147.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Served asset /admin.css - 304 Not Modified (0ms)
+Served asset /games.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (1ms)
+Served asset /members.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Served asset /roles_controller.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/users_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Served asset /users_controller.css - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/roles_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Served asset /members.js - 304 Not Modified (0ms)
+Served asset /roles_controller.js - 304 Not Modified (0ms)
+Served asset /games.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/users_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:40 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /users_controller.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (28.7ms)
+  Rendered users/new.html.haml within layouts/application (34.0ms)
+Completed 200 OK in 64ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/roles_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Served asset /admin.css - 304 Not Modified (0ms)
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Served asset /roles_controller.css - 304 Not Modified (0ms)
+Served asset /members.css - 304 Not Modified (0ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/users_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+Served asset /users_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/roles_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Served asset /admin.js - 304 Not Modified (0ms)
+Served asset /games.js - 304 Not Modified (0ms)
+Served asset /members.js - 304 Not Modified (0ms)
+Served asset /roles_controller.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+
+
+Started GET "/assets/users_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:42 -0600
+Served asset /users_controller.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.haml within layouts/application (41.3ms)
+Completed 200 OK in 77ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+
+
+Started GET "/assets/roles_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+Served asset /games.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+Served asset /roles_controller.css - 304 Not Modified (1ms)
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Served asset /members.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users_controller.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+Served asset /users.css - 304 Not Modified (3ms)
+Served asset /users_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-04-16 17:12:43 -0600
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+
+
+Started GET "/assets/roles_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+Served asset /admin.js - 304 Not Modified (0ms)
+Served asset /roles_controller.js - 304 Not Modified (0ms)
+Served asset /users.js - 304 Not Modified (0ms)
+Served asset /games.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+
+
+Started GET "/assets/users_controller.js?body=1" for 127.0.0.1 at 2012-04-16 17:12:44 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+Served asset /users_controller.js - 304 Not Modified (0ms)
+Served asset /members.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-04-19 22:58:38 -0600
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.haml within layouts/application (100.1ms)
+Completed 200 OK in 698ms (Views: 452.5ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /games.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /members.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/roles_controller.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /roles_controller.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:40 -0600
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users_controller.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+Served asset /users_controller.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users_controller.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+Served asset /users_controller.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/roles_controller.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+Served asset /roles_controller.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+Served asset /members.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2012-04-19 22:58:41 -0600
+Served asset /admin.js - 304 Not Modified (14ms)
+Served asset /admin.css - 304 Not Modified (19ms)
+Served asset /games.css - 304 Not Modified (13ms)
+Served asset /application.js - 304 Not Modified (43ms)
