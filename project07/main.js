@@ -1,5 +1,6 @@
 var guessesLeft = 10;
 var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "NearlyDied"]);
+//var correctGuess=Math.round(Math.random() *100) + 1;
 var correctGuess = 9;
 var win = false;
 
@@ -14,7 +15,6 @@ function populateHighScores(scores) {
   scores.reverse();
   for (var i = 0; i < scores.length; ++i) {
     $('div#highScores').append("<p>" + scores[i][0] + " " + scores[i][1] + "</p>");
-
   }
 }
 
@@ -66,5 +66,6 @@ function checkGuess(playerGuess) {
 function playAgain() {
   win=false;
   guessesLeft = 10;
-
+  correctGuess=Math.round(Math.random() *100) + 1;
+  updateScore(guessesLeft)
 }
