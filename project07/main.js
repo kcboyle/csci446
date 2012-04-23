@@ -6,7 +6,6 @@ var win = false;
 $(function() {
   updateScore(guessesLeft);
   populateHighScores(highScores);
-  decrementGuessesLeft();
 });
 
 function populateHighScores(scores) {
@@ -23,7 +22,7 @@ function updateScore(score) {
 }
 
 function parseGuess() {
-  guess=document.getElementById('newGuess').value;
+  guess=document.getElementById("guess").value;
   checkGuess(guess);  
   if (guessesLeft == 0) {
     alert("Sorry! You have lost the game and DIED...");
@@ -41,7 +40,7 @@ function checkGuess(playerGuess) {
   } else if (playerGuess < correctGuess) {
     alert("Your guess is too low...");
   } else if (playerGuess > correctGuess) {
-    alert("Your guess it too high...");
+    alert("Your guess is too high...");
   }
   --guessesLeft;
 }
