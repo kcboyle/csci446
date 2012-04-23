@@ -17,8 +17,17 @@ function populateHighScores(scores) {
 }
 
 function updateScore(score) {
-  $('h2#score span#guessesLeft').empty();
-  $('h2#score span#guessesLeft').append(score);
+  if (win == true) {
+    var r=confirm("Would you like to play again?");
+    if (r == true) {
+      playAgain();
+    } else { 
+      alert("We hope you gamble with your life again soon...");
+    }
+  } else {
+    $('h2#score span#guessesLeft').empty();
+    $('h2#score span#guessesLeft').append(score);
+  }
 }
 
 function parseGuess() {
@@ -26,7 +35,12 @@ function parseGuess() {
   checkGuess(guess);  
   if (guessesLeft == 0) {
     alert("Sorry! You have lost the game and DIED...");
-    // ask to play again
+    var l=confirm("Would you like to play again?");
+    if (l == true) {
+      playAgain();
+    } else { 
+      alert("Fine then. Enjoy the afterlife...");
+    }
   } else {
     updateScore(guessesLeft);
   }
@@ -36,7 +50,7 @@ function checkGuess(playerGuess) {
   if (playerGuess == correctGuess) {
     alert("Congratulations! You have survived the game!!");
     win = true;
-    //ask to play again
+    //take high score
   } else if (playerGuess < correctGuess) {
     alert("Your guess is too low...");
   } else if (playerGuess > correctGuess) {
@@ -44,10 +58,8 @@ function checkGuess(playerGuess) {
   }
   --guessesLeft;
 }
-//check the guess is equal
-//you win message displayed
-//decrement guesses(only 10 total)
-//game is over if guessesLeft == 0
-//you lose message displayed
-//display too low, too high messages
+
+function playAgain() {
+  //set all values to the defaults
+}
 //get name and display the name in high scores
