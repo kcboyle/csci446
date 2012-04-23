@@ -41,8 +41,7 @@ function parseGuess() {
   guess=document.getElementById("guess").value;
   checkGuess(guess);  
   if (guessesLeft == 0) {
-    alert("Sorry! You have lost the game and DIED...");
-    var l=confirm("Would you like to play again? Your survival depends on it...");
+    var l=confirm("Sorry! You have lost the game and DIED!! Would you like to play again? Your survival depends on it...");
     if (l == true) {
       $('div#entireBody').slideUp('slow');
       $('div#entireBody').slideDown('slow', playAgain());
