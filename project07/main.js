@@ -19,7 +19,3 @@ function populateHighScores(scores) {
 function updateScore(score) {
   $('h2#score span#guessesLeft').append(score);
 }
-
-function decrementGuessesLeft() {
-  --guessesLeft;
-}
