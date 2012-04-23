@@ -1,6 +1,7 @@
 var guessesLeft = 10;
-var numberHighScores = 5;
 var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "NearlyDied"]);
+var correctGuess = 9;
+var win = false;
 
 $(function() {
   updateScore(guessesLeft);
@@ -22,10 +23,11 @@ function updateScore(score) {
 
 function parseGuess() {
   guess=document.getElementById('newGuess');
-  //if guess is correct
-    //then the game is won
-  // else decrement guessesLeft
-  //if guessesLeft equals zero
-    //then the game is lost
-
+  if (guess == correctGuess) {
+    win = true;
+  } else if (guessesLeft == 0) {
+    //game is lost
+  } else { 
+    --guessesLeft;
+  }
 }
