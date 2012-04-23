@@ -13,11 +13,16 @@ function populateHighScores(scores) {
   scores.reverse();
   for (var i = 0; i < scores.length; ++i) {
     $('div#highScores').append("<p>" + scores[i][0] + " " + scores[i][1] + "</p>");
+
   }
 }
 
 function updateScore(score) {
   if (win == true) {
+    alert("Congratulations! You have survived the game!!");
+    var name=prompt("A new high score! Please enter your name ","Your Name");
+    highScores.push(name);
+    populateHighScores(highScores);
     var r=confirm("Would you like to play again?");
     if (r == true) {
       playAgain();
@@ -48,9 +53,7 @@ function parseGuess() {
 
 function checkGuess(playerGuess) {
   if (playerGuess == correctGuess) {
-    alert("Congratulations! You have survived the game!!");
     win = true;
-    //take high score
   } else if (playerGuess < correctGuess) {
     alert("Your guess is too low...");
   } else if (playerGuess > correctGuess) {
