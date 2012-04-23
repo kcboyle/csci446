@@ -22,12 +22,31 @@ function updateScore(score) {
 }
 
 function parseGuess() {
-  guess=document.getElementById('newGuess');
-  if (guess == correctGuess) {
-    win = true;
-  } else if (guessesLeft == 0) {
-    //game is lost
-  } else { 
-    --guessesLeft;
+  guess=document.getElementById('newGuess').value;
+  checkGuess(guess);  
+  if (guessesLeft == 0) {
+    alert("Sorry! You have lost the game and DIED...");
+  } else {
+    updateScore(guessesLeft);
   }
 }
+
+function checkGuess(playerGuess) {
+  if (playerGuess == correctGuess) {
+    alert("Congratulations! You have survived the game!!");
+    win = true;
+    //ask to play again
+  } else if (playerGuess < correctGuess) {
+    alert("Your guess is too low...");
+  } else if (playerGuess > correctGuess) {
+    alert("Your guess it too high...");
+  }
+  --guessesLeft;
+}
+//check the guess is equal
+//you win message displayed
+//decrement guesses(only 10 total)
+//game is over if guessesLeft == 0
+//you lose message displayed
+//display too low, too high messages
+//get name and display the name in high scores
