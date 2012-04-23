@@ -18,6 +18,7 @@ function populateHighScores(scores) {
 }
 
 function updateScore(score) {
+  $('h2#score span#guessesLeft').empty();
   $('h2#score span#guessesLeft').append(score);
 }
 
@@ -26,6 +27,7 @@ function parseGuess() {
   checkGuess(guess);  
   if (guessesLeft == 0) {
     alert("Sorry! You have lost the game and DIED...");
+    // ask to play again
   } else {
     updateScore(guessesLeft);
   }
