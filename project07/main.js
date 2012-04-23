@@ -20,8 +20,8 @@ function populateHighScores(scores) {
 function updateScore(score) {
   if (win == true) {
     alert("Congratulations! You have survived the game!!");
-    var name=prompt("A new high score! Please enter your name ","Your Name");
-    highScores.push(name);
+    var name=prompt("A new high score! Please enter your name ","YourName");
+    highScores.push([guessesLeft, name]);
     populateHighScores(highScores);
     var r=confirm("Would you like to play again?");
     if (r == true) {
