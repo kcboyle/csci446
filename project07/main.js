@@ -1,7 +1,6 @@
 var guessesLeft = 10;
 var highScores = new Array([9, "HarryJamesPotter"], [3, "ZedCthulhu"], [2, "NearlyDied"]);
-//var correctGuess=Math.round(Math.random() *100) + 1;
-var correctGuess = 9;
+var correctGuess=Math.round(Math.random() * 100) + 1;
 var win = false;
 
 $(function() {
@@ -26,9 +25,11 @@ function updateScore(score) {
     populateHighScores(highScores);
     var r=confirm("Would you like to play again?");
     if (r == true) {
-      playAgain();
+      $('div#entireBody').slideUp('slow');
+      $('div#entireBody').slideDown('slow', playAgain());
     } else { 
       alert("We hope you gamble with your life again soon...");
+      $('div#entireBody').fadeTo('slow', 0);
     }
   } else {
     $('h2#score span#guessesLeft').empty();
@@ -41,11 +42,13 @@ function parseGuess() {
   checkGuess(guess);  
   if (guessesLeft == 0) {
     alert("Sorry! You have lost the game and DIED...");
-    var l=confirm("Would you like to play again?");
+    var l=confirm("Would you like to play again? Your survival depends on it...");
     if (l == true) {
-      playAgain();
+      $('div#entireBody').slideUp('slow');
+      $('div#entireBody').slideDown('slow', playAgain());
     } else { 
       alert("Fine then. Enjoy the afterlife...");
+      $('div#entireBody').fadeTo('slow', 0);
     }
   } else {
     updateScore(guessesLeft);
@@ -55,12 +58,13 @@ function parseGuess() {
 function checkGuess(playerGuess) {
   if (playerGuess == correctGuess) {
     win = true;
-  } else if (playerGuess < correctGuess) {
-    alert("Your guess is too low...");
-  } else if (playerGuess > correctGuess) {
-    alert("Your guess is too high...");
+  } else if (win == false) {
+      if (playerGuess < correctGuess) {
+        alert("Your guess is too LOW...Try harder or DIE");
+      } else if (playerGuess > correctGuess) {
+        alert("Your guess is too HIGH...Seriously? Don't be so ambitious");
+      }  --guessesLeft;
   }
-  --guessesLeft;
 }
 
 function playAgain() {

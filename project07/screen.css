@@ -30,6 +30,10 @@ input#guess {
   font-size: 8em;
 }
 
+input#btnGuess {
+  font-size: 8em;
+}
+
 form#guessTheNumber {
   width: 50%;
   margin: auto;
