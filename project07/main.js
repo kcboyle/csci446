@@ -9,6 +9,7 @@ $(function() {
 });
 
 function populateHighScores(scores) {
+  $('div#highScores').empty();
   scores.sort();
   scores.reverse();
   for (var i = 0; i < scores.length; ++i) {
@@ -63,6 +64,7 @@ function checkGuess(playerGuess) {
 }
 
 function playAgain() {
-  //set all values to the defaults
+  win=false;
+  guessesLeft = 10;
+
 }
-//get name and display the name in high scores
