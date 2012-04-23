@@ -19,3 +19,13 @@ function populateHighScores(scores) {
 function updateScore(score) {
   $('h2#score span#guessesLeft').append(score);
 }
+
+function parseGuess() {
+  guess=document.getElementById('newGuess');
+  //if guess is correct
+    //then the game is won
+  // else decrement guessesLeft
+  //if guessesLeft equals zero
+    //then the game is lost
+
+}
