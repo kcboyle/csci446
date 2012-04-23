@@ -9,6 +9,8 @@ $(function() {
 });
 
 function populateHighScores(scores) {
+  scores.sort();
+  scores.reverse();
   for (var i = 0; i < scores.length; ++i) {
     $('div#highScores').append("<p>" + scores[i][0] + " " + scores[i][1] + "</p>");
   }
